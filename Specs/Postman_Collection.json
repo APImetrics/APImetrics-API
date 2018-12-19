@@ -1,0 +1,490 @@
+{
+  "info": {
+    "_postman_id": "907fe03a-5953-4ab0-9465-cf7374dafcdf",
+    "name": "APImetrics APIs",
+    "description": "APIs for your APImetrics account",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "f1475964-41f0-4eaf-8860-8ad821b97225",
+      "name": "API Calls",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "54328e15-9f46-4849-98f8-e825053864b8",
+          "name": "List Calls",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "7306757d-90b4-46d9-a59e-3147d7f6d0df",
+                "exec": [
+                  "",
+                  "pm.test(\"Successful GET request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200]);",
+                  "});",
+                  "",
+                  "pm.test(\"Get Call ID\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.results);",
+                  "    pm.environment.set(\"call_id\", jsonData.results[0].id);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "https://client.apimetrics.io/api/2/calls/"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "a6600909-fdd4-4a88-a6f0-47150d2b45a9",
+          "name": "Get Call",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "240b4c02-83f1-4649-8ecb-deecbccf7525",
+                "exec": [
+                  "",
+                  "pm.test(\"Successful GET request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200]);",
+                  "});",
+                  "",
+                  "pm.test(\"Get Call ID\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.id);",
+                  "    pm.environment.set(\"call_id\", jsonData.id);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "https://client.apimetrics.io/api/2/calls/{{call_id}}/"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "2f4ae453-f66c-4acd-81c8-c2d47a388b90",
+          "name": "Create Call",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "1875a878-1cf5-4c46-865e-a7c95efba633",
+                "exec": [
+                  "",
+                  "pm.test(\"Successful POST request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+                  "});",
+                  "",
+                  "pm.test(\"Get Call ID\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.id);",
+                  "    pm.environment.set(\"call_id\", jsonData.id);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"meta\": {\n        \"name\": \"Minimal API test name\"\n    },\n    \"request\": {\n        \"method\": \"get\",\n        \"url\": \"http://google.apimetrics.xyz/get\"\n    }\n}"
+            },
+            "url": "https://client.apimetrics.io/api/2/calls/"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "ff90fc6e-5476-470b-9cf5-6c226ae4190d",
+          "name": "Update Call",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "d8647e96-aa9f-41b7-8fa3-9fe1ee866407",
+                "exec": [
+                  "",
+                  "pm.test(\"Successful UPDATE request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+                  "});",
+                  "",
+                  "pm.test(\"Get Call ID\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.id);",
+                  "    pm.environment.set(\"call_id\", jsonData.id);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"meta\": {\n        \"name\": \"Minimal API test name\"\n    },\n    \"request\": {\n        \"method\": \"get\",\n        \"url\": \"http://google.apimetrics.xyz/get\"\n    }\n}"
+            },
+            "url": "https://client.apimetrics.io/api/2/calls/{{call_id}}/"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "2024e706-fc98-4e77-99d4-bbc88ead2433",
+          "name": "Delete Call",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "55ea0fb6-0dc5-4984-9a87-4b69bf4347dc",
+                "exec": [
+                  "",
+                  "pm.test(\"Successful DELETE request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200]);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "https://client.apimetrics.io/api/2/calls/{{call_id}}/"
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "a8d4efdc-90ab-4f5f-8243-fd20285b0416",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "e2842012-d44b-4c60-9bb2-c1506872b6c2",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_postman_id": "ca7eec54-5b7a-4196-8a19-1498013f3b1f",
+      "name": "Workflows",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "ee9ac832-458c-4fab-8e54-525b745ab102",
+          "name": "List Workflows",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "https://client.apimetrics.io/api/2/workflows/"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "b805ea44-5f2f-4076-9c00-8d9924e89fd1",
+          "name": "Get Workflow",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "https://client.apimetrics.io/api/2/workflows/{{workflow_id}}/"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "f8aaa182-1bea-46b4-a110-5f93adae0eb3",
+          "name": "Create Workflow",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"meta\": {\n        \"name\": \"Minimal Workflow name\"\n    }\n}"
+            },
+            "url": "https://client.apimetrics.io/api/2/workflows/"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "8d352b40-7caa-4326-8017-cb9d007d9ed4",
+          "name": "Update Workflow",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"workflow\": {\n        \"call_ids\": [\n            \"{{call_id}}\"\n        ],\n        \"handle_cookies\": true\n    }\n}"
+            },
+            "url": "https://client.apimetrics.io/api/2/workflows/{{workflow_id}}/"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "54efc38c-ab86-4db3-be9b-c74a95750f50",
+          "name": "Delete Workflow",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "https://client.apimetrics.io/api/2/workflows/{{workflow_id}}/"
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "a8d4efdc-90ab-4f5f-8243-fd20285b0416",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "e2842012-d44b-4c60-9bb2-c1506872b6c2",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_postman_id": "d6227989-0806-4c3c-9fd3-8fce0b7b3049",
+      "name": "Authentication Settings",
+      "description": "",
+      "item": [
+        {
+          "_postman_id": "55bb54c1-c034-4964-8dbc-3e6a734699f0",
+          "name": "List Auth Settings",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "https://client.apimetrics.io/api/2/auth/"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "48e4d2a2-e471-4621-ae34-50f3956ba70e",
+          "name": "Get Auth",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "https://client.apimetrics.io/api/2/auth/{{auth_id}}/"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "62a0dc3e-d63a-48d2-840c-daba12df42e3",
+          "name": "Create Auth",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"meta\": {\n        \"name\": \"Minimal Auth Settings name\",\n        \"domain\": \"httpbin.org\"\n    },\n    \"settings\": {\n        \"auth_type\": \"NONE\"\n    }\n}"
+            },
+            "url": "https://client.apimetrics.io/api/2/auth/"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "da896bed-3ca4-446c-9832-a829fc1182fc",
+          "name": "Update Auth",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"meta\": {\n        \"name\": \"Auth Settings update\",\n        \"domain\": \"httpbin.org\"\n    },\n    \"settings\": {\n        \"auth_type\": \"OAUTH2_JWT\",\n        \"custom_variables\": {\n            \"foo\": \"bar\",\n            \"api\": 1,\n            \"access_token\": \"asfasdfasdfasdfasdfa\"\n        },\n        \"authorize_url\": \"http://httpbin.org/get\"\n    }\n}"
+            },
+            "url": "https://client.apimetrics.io/api/2/auth/{{auth_id}}/"
+          },
+          "response": []
+        },
+        {
+          "_postman_id": "2a6c3bff-8089-4d41-8fd5-976011480f87",
+          "name": "Delete Auth",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "https://client.apimetrics.io/api/2/auth/{{auth_id}}/"
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "a8d4efdc-90ab-4f5f-8243-fd20285b0416",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "e2842012-d44b-4c60-9bb2-c1506872b6c2",
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": {
+      "token": "{{apimetrics_api_key}}"
+    }
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "6254d105-193c-4047-a18b-8aeb0c1127ca",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "88aa4976-1c9a-4084-bdec-54b1036f1167",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "3ee4afbd-11a2-4730-9ead-d58e79c0098d",
+      "key": "apimetrics_token",
+      "value": "TBD",
+      "type": "string",
+      "description": ""
+    }
+  ]
+}
