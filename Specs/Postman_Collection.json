@@ -353,7 +353,8 @@
               "mode": "raw",
               "raw": "{\n    \"workflow\": {\n        \"call_ids\": [\n            \"{{call_id}}\"\n        ],\n        \"handle_cookies\": true\n    }\n}"
             },
-            "url": "https://client.apimetrics.io/api/2/workflows/{{workflow_id}}/"
+            "url": "https://client.apimetrics.io/api/2/workflows/{{workflow_id}}/",
+            "description": "Update an existing workflow."
           },
           "response": []
         },
@@ -957,7 +958,7 @@
   ],
   "variable": [
     {
-      "id": "dff131e4-be07-4ef2-86c8-f45d786a19e2",
+      "id": "bc652c26-26ff-450a-9f86-3529bb543894",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
