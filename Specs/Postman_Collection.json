@@ -806,7 +806,7 @@
               "mode": "raw",
               "raw": "{\n    \"meta\": {\n        \"name\": \"Auth Settings update\",\n        \"domain\": \"httpbin.org\"\n    },\n    \"settings\": {\n        \"auth_type\": \"OAUTH2_JWT\",\n        \"custom_variables\": {\n            \"foo\": \"bar\",\n            \"api\": 1,\n            \"access_token\": \"asfasdfasdfasdfasdfa\"\n        },\n        \"authorize_url\": \"http://httpbin.org/get\"\n    }\n}"
             },
-            "url": "https://client.apimetrics.io/api/2/auth/{{auth_id}}/",
+            "url": "https://client.apimetrics.io/api/2/auth/{{token_id}}/",
             "description": "Update an existing Authentication Setting."
           },
           "response": []
@@ -871,7 +871,7 @@
           "request": {
             "method": "DELETE",
             "header": [],
-            "url": "https://client.apimetrics.io/api/2/auth/{{auth_id}}/",
+            "url": "https://client.apimetrics.io/api/2/auth/{{token_id}}/",
             "description": "Delete an existing Authentication Setting."
           },
           "response": []
@@ -1178,7 +1178,7 @@
   ],
   "variable": [
     {
-      "id": "1b07569b-285f-48ab-90c7-337671279f9f",
+      "id": "411edea7-03b9-4b80-82ca-f39183a645d3",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
