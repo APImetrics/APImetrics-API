@@ -804,7 +804,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"meta\": {\n    \t\"auth_id\": {{auth_id}},\n        \"name\": \"Auth Token update\"\n    },\n    \"settings\": {\n        \"auth_type\": \"OAUTH2_JWT\",\n        \"custom_variables\": {\n            \"foo\": \"bar\",\n            \"api\": 1,\n            \"access_token\": \"asfasdfasdfasdfasdfa\"\n        },\n        \"authorize_url\": \"http://httpbin.org/get\"\n    }\n}"
+              "raw": "{\n    \"meta\": {\n    \t\"auth_id\": \"{{auth_id}}\",\n        \"name\": \"Auth Token update\"\n    },\n    \"token\": {\n        \"expires_in\": 1800, \n        \"access_token\": \"pb1tKMspuoCa5EuJ6AlkWT87wg2-FsXzcCy-YYtAp-vArkR7PmfBqB0Z1V6_uC2eMB1Y\"\n    }\n}"
             },
             "url": "https://client.apimetrics.io/api/2/auth/{{token_id}}/",
             "description": "Update an existing Authentication Setting."
@@ -1213,7 +1213,7 @@
   ],
   "variable": [
     {
-      "id": "def0f9fe-a6e4-4040-80b8-64fc1f62dfae",
+      "id": "4872a0be-b4d1-4ccb-a398-701eb8835622",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
