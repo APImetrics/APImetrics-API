@@ -310,6 +310,28 @@
         },
         {
           "name": "Update Workflow",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "09908696-1174-4a89-9710-0a99188e0309",
+                "exec": [
+                  "",
+                  "pm.test(\"Successful UPDATE request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200]);",
+                  "});",
+                  "",
+                  "pm.test(\"Get Workflow ID\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.id === pm.environment['workflow_id']);",
+                  "    pm.environment.set(\"workflow_id\", jsonData.id);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "_postman_id": "8d352b40-7caa-4326-8017-cb9d007d9ed4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -469,6 +491,28 @@
         },
         {
           "name": "Update Auth",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "cf5fe0fd-29d9-4495-9903-c70e8e47f9f8",
+                "exec": [
+                  "",
+                  "pm.test(\"Successful UPDATE request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200]);",
+                  "});",
+                  "",
+                  "pm.test(\"Get Auth ID\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.id === pm.environment['auth_id']);",
+                  "    pm.environment.set(\"auth_id\", jsonData.id);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "_postman_id": "da896bed-3ca4-446c-9832-a829fc1182fc",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -604,7 +648,7 @@
                   "    pm.expect(pm.response.code).to.be.oneOf([200]);",
                   "});",
                   "",
-                  "pm.test(\"Get Call ID\", function () {",
+                  "pm.test(\"Get Report ID\", function () {",
                   "    var jsonData = pm.response.json();",
                   "    pm.expect(jsonData.id);",
                   "    pm.environment.set(\"report_id\", jsonData.id);",
@@ -636,12 +680,12 @@
                 "exec": [
                   "",
                   "pm.test(\"Successful UPDATE request\", function () {",
-                  "    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200]);",
                   "});",
                   "",
-                  "pm.test(\"Get Call ID\", function () {",
+                  "pm.test(\"Get Report ID\", function () {",
                   "    var jsonData = pm.response.json();",
-                  "    pm.expect(jsonData.id);",
+                  "    pm.expect(jsonData.id === pm.environment['report_id']);",
                   "    pm.environment.set(\"report_id\", jsonData.id);",
                   "});",
                   ""
@@ -835,7 +879,7 @@
   ],
   "variable": [
     {
-      "id": "4147ff64-b4c0-4efc-9def-95b3e1dfbc4d",
+      "id": "c068287f-3778-48a5-a8d7-431a7d2d4625",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
