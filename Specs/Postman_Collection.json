@@ -252,19 +252,6 @@
           "response": []
         },
         {
-          "name": "List Workflows",
-          "_postman_id": "ee9ac832-458c-4fab-8e54-525b745ab102",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": "https://client.apimetrics.io/api/2/workflows/"
-          },
-          "response": []
-        },
-        {
           "name": "Get Workflow",
           "_postman_id": "b805ea44-5f2f-4076-9c00-8d9924e89fd1",
           "protocolProfileBehavior": {
@@ -298,6 +285,19 @@
               "raw": "{\n    \"workflow\": {\n        \"call_ids\": [\n            \"{{call_id}}\"\n        ],\n        \"handle_cookies\": true\n    }\n}"
             },
             "url": "https://client.apimetrics.io/api/2/workflows/{{workflow_id}}/"
+          },
+          "response": []
+        },
+        {
+          "name": "List Workflows",
+          "_postman_id": "ee9ac832-458c-4fab-8e54-525b745ab102",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "https://client.apimetrics.io/api/2/workflows/"
           },
           "response": []
         },
@@ -747,7 +747,7 @@
   ],
   "variable": [
     {
-      "id": "b75ab9f1-6c34-4dcb-90ce-6958456c8bd3",
+      "id": "1ce334fe-ccab-42d8-9e67-e4f491362e6d",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
