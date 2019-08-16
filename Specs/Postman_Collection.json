@@ -765,7 +765,7 @@
           "response": []
         },
         {
-          "name": "Update Auth Copy",
+          "name": "Update Auth Token",
           "event": [
             {
               "listen": "test",
@@ -1178,7 +1178,7 @@
   ],
   "variable": [
     {
-      "id": "1d67ec6c-a353-4456-ac28-20024a16eed3",
+      "id": "e404ee14-69d2-4e34-8e33-852c41a155b5",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
