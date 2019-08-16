@@ -51,7 +51,8 @@
               "mode": "raw",
               "raw": "{\n    \"meta\": {\n        \"name\": \"Minimal API test name\"\n    },\n    \"request\": {\n        \"method\": \"get\",\n        \"url\": \"http://google.apimetrics.xyz/get\"\n    }\n}"
             },
-            "url": "https://client.apimetrics.io/api/2/calls/"
+            "url": "https://client.apimetrics.io/api/2/calls/",
+            "description": "Create a new API call."
           },
           "response": []
         },
@@ -86,7 +87,8 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "https://client.apimetrics.io/api/2/calls/{{call_id}}/"
+            "url": "https://client.apimetrics.io/api/2/calls/{{call_id}}/",
+            "description": "Get an existing API call."
           },
           "response": []
         },
@@ -132,7 +134,8 @@
               "mode": "raw",
               "raw": "{\n    \"meta\": {\n        \"name\": \"Minimal API test name\"\n    },\n    \"request\": {\n        \"method\": \"get\",\n        \"url\": \"http://google.apimetrics.xyz/get\"\n    }\n}"
             },
-            "url": "https://client.apimetrics.io/api/2/calls/{{call_id}}/"
+            "url": "https://client.apimetrics.io/api/2/calls/{{call_id}}/",
+            "description": "Update an existing API call."
           },
           "response": []
         },
@@ -960,7 +963,7 @@
   ],
   "variable": [
     {
-      "id": "07014442-f05e-419c-8bed-7d4bbd64751f",
+      "id": "ca361487-aa64-4fe3-abf8-08c86b584a63",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
