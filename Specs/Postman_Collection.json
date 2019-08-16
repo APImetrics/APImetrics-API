@@ -367,7 +367,7 @@
                   "    pm.expect(pm.response.code).to.be.oneOf([200]);",
                   "});",
                   "",
-                  "pm.test(\"Ensure Call ID in List\", function () {",
+                  "pm.test(\"Ensure Workflow ID in List\", function () {",
                   "    var jsonData = pm.response.json();",
                   "    pm.expect(jsonData.results.find(obj => obj.id === pm.environment['workflow_id']));",
                   "});",
@@ -920,7 +920,7 @@
   ],
   "variable": [
     {
-      "id": "42182240-4f09-4c17-92b0-54110b50d6b2",
+      "id": "9123811b-a9dd-483a-bcb1-566baa555581",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
