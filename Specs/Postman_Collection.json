@@ -10,41 +10,6 @@
       "name": "API Calls",
       "item": [
         {
-          "name": "List All Calls",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "7306757d-90b4-46d9-a59e-3147d7f6d0df",
-                "exec": [
-                  "",
-                  "pm.test(\"Successful GET request\", function () {",
-                  "    pm.expect(pm.response.code).to.be.oneOf([200]);",
-                  "});",
-                  "",
-                  "pm.test(\"Get Call ID\", function () {",
-                  "    var jsonData = pm.response.json();",
-                  "    pm.expect(jsonData.results);",
-                  "    pm.environment.set(\"call_id\", jsonData.results[0].id);",
-                  "});",
-                  ""
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "_postman_id": "54328e15-9f46-4849-98f8-e825053864b8",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": "https://client.apimetrics.io/api/2/calls/"
-          },
-          "response": []
-        },
-        {
           "name": "Get Call",
           "event": [
             {
@@ -168,6 +133,41 @@
               "raw": "{\n    \"meta\": {\n        \"name\": \"Minimal API test name\"\n    },\n    \"request\": {\n        \"method\": \"get\",\n        \"url\": \"http://google.apimetrics.xyz/get\"\n    }\n}"
             },
             "url": "https://client.apimetrics.io/api/2/calls/{{call_id}}/"
+          },
+          "response": []
+        },
+        {
+          "name": "List All Calls",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "7306757d-90b4-46d9-a59e-3147d7f6d0df",
+                "exec": [
+                  "",
+                  "pm.test(\"Successful GET request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200]);",
+                  "});",
+                  "",
+                  "pm.test(\"Get Call ID\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.results);",
+                  "    pm.environment.set(\"call_id\", jsonData.results[0].id);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "54328e15-9f46-4849-98f8-e825053864b8",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "https://client.apimetrics.io/api/2/calls/"
           },
           "response": []
         },
@@ -748,7 +748,7 @@
   ],
   "variable": [
     {
-      "id": "e7371b60-fc07-447e-bd79-19102e0b277a",
+      "id": "62d43a16-1ca6-4c4c-9757-e02559a00d1a",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
