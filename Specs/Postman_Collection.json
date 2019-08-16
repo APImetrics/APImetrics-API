@@ -306,7 +306,8 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "https://client.apimetrics.io/api/2/workflows/{{workflow_id}}/"
+            "url": "https://client.apimetrics.io/api/2/workflows/{{workflow_id}}/",
+            "description": "Gets an existing workflow."
           },
           "response": []
         },
@@ -956,7 +957,7 @@
   ],
   "variable": [
     {
-      "id": "934e68f4-ffd5-4321-884e-93f4d933d08a",
+      "id": "dff131e4-be07-4ef2-86c8-f45d786a19e2",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
