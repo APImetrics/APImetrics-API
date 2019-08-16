@@ -2,7 +2,7 @@
   "info": {
     "_postman_id": "907fe03a-5953-4ab0-9465-cf7374dafcdf",
     "name": "APImetrics APIs",
-    "description": "APIs that let you manage your settings and results for your APImetrics account",
+    "description": "APIs that let you manage your settings and results for your APImetrics account.",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
   "item": [
@@ -201,7 +201,7 @@
         }
       ],
       "_postman_id": "f1475964-41f0-4eaf-8860-8ad821b97225",
-      "description": "Manage the API call definitions",
+      "description": "Manage the API call definitions for your account.",
       "event": [
         {
           "listen": "prerequest",
@@ -955,7 +955,7 @@
   ],
   "variable": [
     {
-      "id": "720cf738-0947-403c-a968-0d40c6056073",
+      "id": "9da75dc4-0579-4547-8b15-ea5626f73c04",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
