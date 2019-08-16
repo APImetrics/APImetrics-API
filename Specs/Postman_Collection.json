@@ -275,6 +275,28 @@
         },
         {
           "name": "Get Workflow",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "ab156814-91dc-4f69-9015-700215b7ff56",
+                "exec": [
+                  "",
+                  "pm.test(\"Successful GET request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200]);",
+                  "});",
+                  "",
+                  "pm.test(\"Get Workflow ID\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.id);",
+                  "    pm.environment.set(\"workflow\", jsonData.id);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "_postman_id": "b805ea44-5f2f-4076-9c00-8d9924e89fd1",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -791,7 +813,7 @@
   ],
   "variable": [
     {
-      "id": "13d809c5-8638-4d39-861c-abe41603d18c",
+      "id": "01cedcc9-c621-4812-83cc-8d92269d109f",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
