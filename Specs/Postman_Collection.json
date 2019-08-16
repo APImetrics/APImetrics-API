@@ -201,6 +201,7 @@
         }
       ],
       "_postman_id": "f1475964-41f0-4eaf-8860-8ad821b97225",
+      "description": "Manage the API call definitions",
       "event": [
         {
           "listen": "prerequest",
@@ -952,7 +953,7 @@
   ],
   "variable": [
     {
-      "id": "d4448b54-1855-4602-aee9-d72917914333",
+      "id": "dc1a8adf-a2e7-476f-8da0-15d609e2b59f",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
