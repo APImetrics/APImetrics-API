@@ -434,6 +434,28 @@
         },
         {
           "name": "Get Auth",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "d3a819b6-ef6f-4eeb-b1ed-c57eb5364596",
+                "exec": [
+                  "",
+                  "pm.test(\"Successful GET request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200]);",
+                  "});",
+                  "",
+                  "pm.test(\"Get Auth ID\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.id);",
+                  "    pm.environment.set(\"auth_id\", jsonData.id);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "_postman_id": "48e4d2a2-e471-4621-ae34-50f3956ba70e",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -813,7 +835,7 @@
   ],
   "variable": [
     {
-      "id": "a5ad437b-0cc7-42e9-8057-f1236e7c7d9b",
+      "id": "26c76631-5898-425d-8652-a08604e2965c",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
