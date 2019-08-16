@@ -679,12 +679,6 @@
       ]
     },
     {
-      "name": "Authentication Tokens",
-      "item": [],
-      "_postman_id": "0474873f-d508-43ee-83e3-648639022852",
-      "description": "Manage the Authentication Tokens for use with an Authentication Setting"
-    },
-    {
       "name": "Reports",
       "item": [
         {
@@ -950,6 +944,12 @@
         }
       ],
       "_postman_id": "a8ad5b77-9c1c-432b-8b4e-fba892c0f228"
+    },
+    {
+      "name": "Authentication Tokens",
+      "item": [],
+      "_postman_id": "0474873f-d508-43ee-83e3-648639022852",
+      "description": "Manage the Authentication Tokens for use with an Authentication Setting"
     }
   ],
   "auth": {
@@ -982,7 +982,7 @@
   ],
   "variable": [
     {
-      "id": "e2156859-ffbb-40aa-a94c-84b13a265a0e",
+      "id": "9784ae48-eb24-4160-87c2-17f1cc56b76b",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
