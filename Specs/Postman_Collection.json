@@ -502,6 +502,52 @@
       "name": "Reports",
       "item": [
         {
+          "name": "Create Report",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "1875a878-1cf5-4c46-865e-a7c95efba633",
+                "exec": [
+                  "",
+                  "pm.test(\"Successful POST request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+                  "});",
+                  "",
+                  "pm.test(\"Get Call ID\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.id);",
+                  "    pm.environment.set(\"report_id\", jsonData.id);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "2566eb69-61c3-4ebb-8867-0985d634d730",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"meta\": {\n        \"name\": \"Minimal Report name\"\n    }\n}"
+            },
+            "url": "https://client.apimetrics.io/api/2/reports/"
+          },
+          "response": []
+        },
+        {
           "name": "List Reports",
           "event": [
             {
@@ -568,52 +614,6 @@
             "method": "GET",
             "header": [],
             "url": "https://client.apimetrics.io/api/2/reports/{{report_id}}/"
-          },
-          "response": []
-        },
-        {
-          "name": "Create Report",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "1875a878-1cf5-4c46-865e-a7c95efba633",
-                "exec": [
-                  "",
-                  "pm.test(\"Successful POST request\", function () {",
-                  "    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
-                  "});",
-                  "",
-                  "pm.test(\"Get Call ID\", function () {",
-                  "    var jsonData = pm.response.json();",
-                  "    pm.expect(jsonData.id);",
-                  "    pm.environment.set(\"report_id\", jsonData.id);",
-                  "});",
-                  ""
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "_postman_id": "2566eb69-61c3-4ebb-8867-0985d634d730",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "type": "text",
-                "value": "application/json"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"meta\": {\n        \"name\": \"Minimal Report name\"\n    }\n}"
-            },
-            "url": "https://client.apimetrics.io/api/2/reports/"
           },
           "response": []
         },
@@ -791,7 +791,7 @@
   ],
   "variable": [
     {
-      "id": "495ef459-0fee-4fb2-a89c-7bd8cb68b023",
+      "id": "97ea0aba-b4ef-4f4f-aecf-6d5ad777949a",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
