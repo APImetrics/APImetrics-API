@@ -760,7 +760,7 @@
             "method": "GET",
             "header": [],
             "url": "https://client.apimetrics.io/api/2/auth/{{auth_id}}/",
-            "description": "Get an existing Authentication Setting."
+            "description": "Get an existing Authentication Token."
           },
           "response": []
         },
@@ -1178,7 +1178,7 @@
   ],
   "variable": [
     {
-      "id": "609b0c36-2723-47ba-b394-d34beb67a092",
+      "id": "1d67ec6c-a353-4456-ac28-20024a16eed3",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
