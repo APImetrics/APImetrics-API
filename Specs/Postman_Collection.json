@@ -759,7 +759,8 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "https://client.apimetrics.io/api/2/reports/{{report_id}}/"
+            "url": "https://client.apimetrics.io/api/2/reports/{{report_id}}/",
+            "description": "Get an existing report."
           },
           "response": []
         },
@@ -972,7 +973,7 @@
   ],
   "variable": [
     {
-      "id": "f3ff2cec-0a35-470d-a142-1b2da1097ad7",
+      "id": "10452ea1-3753-48f7-9904-ef0ca719a9db",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
