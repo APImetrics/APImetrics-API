@@ -365,6 +365,30 @@
       "name": "Authentication Settings",
       "item": [
         {
+          "name": "Create Auth",
+          "_postman_id": "62a0dc3e-d63a-48d2-840c-daba12df42e3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"meta\": {\n        \"name\": \"Minimal Auth Settings name\",\n        \"domain\": \"httpbin.org\"\n    },\n    \"settings\": {\n        \"auth_type\": \"NONE\"\n    }\n}"
+            },
+            "url": "https://client.apimetrics.io/api/2/auth/"
+          },
+          "response": []
+        },
+        {
           "name": "List Auth Settings",
           "_postman_id": "55bb54c1-c034-4964-8dbc-3e6a734699f0",
           "protocolProfileBehavior": {
@@ -387,30 +411,6 @@
             "method": "GET",
             "header": [],
             "url": "https://client.apimetrics.io/api/2/auth/{{auth_id}}/"
-          },
-          "response": []
-        },
-        {
-          "name": "Create Auth",
-          "_postman_id": "62a0dc3e-d63a-48d2-840c-daba12df42e3",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "type": "text",
-                "value": "application/json"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"meta\": {\n        \"name\": \"Minimal Auth Settings name\",\n        \"domain\": \"httpbin.org\"\n    },\n    \"settings\": {\n        \"auth_type\": \"NONE\"\n    }\n}"
-            },
-            "url": "https://client.apimetrics.io/api/2/auth/"
           },
           "response": []
         },
@@ -769,7 +769,7 @@
   ],
   "variable": [
     {
-      "id": "b8d1068c-2364-4cf0-8907-a7037542f798",
+      "id": "946f6934-3e5a-4c1b-8796-9c3ea6fa5665",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
