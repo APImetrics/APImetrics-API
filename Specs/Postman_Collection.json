@@ -741,10 +741,10 @@
                   "    pm.expect(pm.response.code).to.be.oneOf([200]);",
                   "});",
                   "",
-                  "pm.test(\"Get Auth ID\", function () {",
+                  "pm.test(\"Get Token ID\", function () {",
                   "    var jsonData = pm.response.json();",
                   "    pm.expect(jsonData.id);",
-                  "    pm.environment.set(\"auth_id\", jsonData.id);",
+                  "    pm.environment.set(\"token_id\", jsonData.id);",
                   "});",
                   ""
                 ],
@@ -1213,7 +1213,7 @@
   ],
   "variable": [
     {
-      "id": "75d70555-196a-4990-9059-663e6ad8e0f1",
+      "id": "39d6b85d-7e40-4f9d-ac55-526e467abddc",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
