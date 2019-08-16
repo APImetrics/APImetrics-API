@@ -639,6 +639,7 @@
         }
       ],
       "_postman_id": "d6227989-0806-4c3c-9fd3-8fce0b7b3049",
+      "description": "Manage the Authentication Settings in your account.",
       "event": [
         {
           "listen": "prerequest",
@@ -954,7 +955,7 @@
   ],
   "variable": [
     {
-      "id": "8b3bac1b-eda6-4626-8199-95d7c95117d0",
+      "id": "5719c0bd-7570-48aa-b5fc-08eb05eeeab6",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
