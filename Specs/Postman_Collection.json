@@ -729,7 +729,7 @@
           "response": []
         },
         {
-          "name": "Get Auth Copy",
+          "name": "Get Token",
           "event": [
             {
               "listen": "test",
@@ -1178,7 +1178,7 @@
   ],
   "variable": [
     {
-      "id": "15bd62d8-c202-4bd6-8661-88d6c6a6da5a",
+      "id": "609b0c36-2723-47ba-b394-d34beb67a092",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
