@@ -824,9 +824,9 @@
                   "    pm.expect(pm.response.code).to.be.oneOf([200]);",
                   "});",
                   "",
-                  "pm.test(\"Ensure Auth ID in List\", function () {",
+                  "pm.test(\"Ensure Token ID in List\", function () {",
                   "    var jsonData = pm.response.json();",
-                  "    pm.expect(jsonData.results.find(obj => obj.id === pm.environment['auth_id']));",
+                  "    pm.expect(jsonData.results.find(obj => obj.id === pm.environment['token_id']));",
                   "});",
                   ""
                 ],
@@ -861,7 +861,7 @@
                   "",
                   "pm.test(\"Ensure Auth ID in List\", function () {",
                   "    var jsonData = pm.response.json();",
-                  "    pm.expect(jsonData.results.find(obj => obj.id === pm.environment['auth_id']));",
+                  "    pm.expect(jsonData.results.find(obj => obj.id === pm.environment['token_id']));",
                   "});",
                   ""
                 ],
@@ -876,7 +876,7 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "https://client.apimetrics.io/api/2/tokens/",
+            "url": "https://client.apimetrics.io/api/2/tokens/auth/{{auth_id}}/",
             "description": "Get a list of Authentication Tokens in your account."
           },
           "response": []
@@ -1213,7 +1213,7 @@
   ],
   "variable": [
     {
-      "id": "3624810a-cbba-49b6-a880-f7f3ba7803d1",
+      "id": "fe99bf68-ccc3-4163-8080-a617c77129f0",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
