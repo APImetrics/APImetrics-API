@@ -871,7 +871,8 @@
           "request": {
             "method": "DELETE",
             "header": [],
-            "url": "https://client.apimetrics.io/api/2/reports/{{report_id}}/"
+            "url": "https://client.apimetrics.io/api/2/reports/{{report_id}}/",
+            "description": "Delete an existing report."
           },
           "response": []
         }
@@ -975,7 +976,7 @@
   ],
   "variable": [
     {
-      "id": "fb21cd03-7259-4449-8218-f45018fab7a3",
+      "id": "434e70b9-f811-4189-9af7-12f93f2b8f78",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
