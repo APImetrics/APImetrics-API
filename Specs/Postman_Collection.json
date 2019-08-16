@@ -765,7 +765,7 @@
           "response": []
         },
         {
-          "name": "Update Auth Token",
+          "name": "Update Token",
           "event": [
             {
               "listen": "test",
@@ -1178,7 +1178,7 @@
   ],
   "variable": [
     {
-      "id": "53f1a52a-2826-4ff9-884c-5962a2cec964",
+      "id": "a10d1a97-6b84-4d84-9ce1-3e9e26c65acc",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
