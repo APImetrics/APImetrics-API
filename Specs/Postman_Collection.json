@@ -420,6 +420,7 @@
         }
       ],
       "_postman_id": "ca7eec54-5b7a-4196-8a19-1498013f3b1f",
+      "description": "Manage the Workflow definitions.",
       "event": [
         {
           "listen": "prerequest",
@@ -953,7 +954,7 @@
   ],
   "variable": [
     {
-      "id": "dc1a8adf-a2e7-476f-8da0-15d609e2b59f",
+      "id": "8b3bac1b-eda6-4626-8199-95d7c95117d0",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
