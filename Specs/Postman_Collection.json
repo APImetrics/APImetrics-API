@@ -396,7 +396,6 @@
               "script": {
                 "id": "38778408-70fd-406b-bc25-6c2f37f10ffc",
                 "exec": [
-                  "",
                   "pm.test(\"Successful DELETE request\", function () {",
                   "    pm.expect(pm.response.code).to.be.oneOf([200]);",
                   "});",
@@ -936,7 +935,7 @@
   ],
   "variable": [
     {
-      "id": "79e8352d-80d7-4130-842c-c98c6fbeda93",
+      "id": "639f4df1-e929-4752-888f-95458f865621",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
