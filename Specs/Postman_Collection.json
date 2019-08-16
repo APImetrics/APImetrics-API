@@ -390,6 +390,22 @@
         },
         {
           "name": "Delete Workflow",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "38778408-70fd-406b-bc25-6c2f37f10ffc",
+                "exec": [
+                  "",
+                  "pm.test(\"Successful DELETE request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200]);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "_postman_id": "54efc38c-ab86-4db3-be9b-c74a95750f50",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -920,7 +936,7 @@
   ],
   "variable": [
     {
-      "id": "9123811b-a9dd-483a-bcb1-566baa555581",
+      "id": "79e8352d-80d7-4130-842c-c98c6fbeda93",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
