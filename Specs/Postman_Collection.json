@@ -752,7 +752,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"meta\": {\n        \"name\": \"Minimal API test name\"\n    },\n    \"request\": {\n        \"method\": \"get\",\n        \"url\": \"http://google.apimetrics.xyz/get\"\n    }\n}"
+              "raw": "{\n    \"meta\": {\n        \"name\": \"Minimal Report name\"\n    }\n}"
             },
             "url": "https://client.apimetrics.io/api/2/reports/{{report_id}}/"
           },
@@ -920,7 +920,7 @@
   ],
   "variable": [
     {
-      "id": "9e4f6e14-e47d-4e38-a244-1979528ee46f",
+      "id": "cc0136ae-facb-421e-a821-29d148576bc8",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
