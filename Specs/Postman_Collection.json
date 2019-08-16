@@ -723,7 +723,7 @@
               "mode": "raw",
               "raw": "{\n    \"meta\": {\n        \"name\": \"Minimal Auth Settings name\",\n        \"domain\": \"httpbin.org\"\n    },\n    \"settings\": {\n        \"auth_type\": \"NONE\"\n    }\n}"
             },
-            "url": "https://client.apimetrics.io/api/2/auth/",
+            "url": "https://client.apimetrics.io/api/2/token/",
             "description": "Create a new Authentication Token."
           },
           "response": []
@@ -1178,7 +1178,7 @@
   ],
   "variable": [
     {
-      "id": "df009671-c704-4f5f-bc63-e88c8c9b6e40",
+      "id": "1b07569b-285f-48ab-90c7-337671279f9f",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
