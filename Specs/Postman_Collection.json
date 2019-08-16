@@ -841,8 +841,8 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "https://client.apimetrics.io/api/2/auth/",
-            "description": "Get a list of Authentication Settings in your account."
+            "url": "https://client.apimetrics.io/api/2/tokens/",
+            "description": "Get a list of Authentication Tokens in your account."
           },
           "response": []
         },
@@ -1178,7 +1178,7 @@
   ],
   "variable": [
     {
-      "id": "69568f86-7f62-429b-bf9c-4bf02901d91f",
+      "id": "df009671-c704-4f5f-bc63-e88c8c9b6e40",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
