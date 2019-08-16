@@ -149,9 +149,9 @@
                   "    pm.expect(pm.response.code).to.be.oneOf([200]);",
                   "});",
                   "",
-                  "pm.test(\"Get Call ID\", function () {",
+                  "pm.test(\"Ensure Call ID in List\", function () {",
                   "    var jsonData = pm.response.json();",
-                  "    pm.expect(jsonData.results.find(call => call.id === pm.environment['call_id']));",
+                  "    pm.expect(jsonData.results.find(obj => obj.id === pm.environment['workflow_id']));",
                   "});",
                   ""
                 ],
@@ -356,6 +356,27 @@
         },
         {
           "name": "List Workflows",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "95c3ca90-f3ff-435d-92c8-206961cc766d",
+                "exec": [
+                  "",
+                  "pm.test(\"Successful GET request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200]);",
+                  "});",
+                  "",
+                  "pm.test(\"Ensure Call ID in List\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.results.find(obj => obj.id === pm.environment['workflow_id']));",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "_postman_id": "ee9ac832-458c-4fab-8e54-525b745ab102",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -537,6 +558,27 @@
         },
         {
           "name": "List Auth Settings",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "c9e839d9-cb5c-4674-a417-dbc7bd349d89",
+                "exec": [
+                  "",
+                  "pm.test(\"Successful GET request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200]);",
+                  "});",
+                  "",
+                  "pm.test(\"Ensure Auth ID in List\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.results.find(obj => obj.id === pm.environment['auth_id']));",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "_postman_id": "55bb54c1-c034-4964-8dbc-3e6a734699f0",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -879,7 +921,7 @@
   ],
   "variable": [
     {
-      "id": "c068287f-3778-48a5-a8d7-431a7d2d4625",
+      "id": "1f19ad85-248f-4005-94fd-f3106fa17ffb",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
