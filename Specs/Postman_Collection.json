@@ -458,13 +458,6 @@
       "name": "Authentication Settings",
       "item": [
         {
-          "name": "Authentication Tokens",
-          "item": [],
-          "_postman_id": "0474873f-d508-43ee-83e3-648639022852",
-          "description": "Manage the Authentication Tokens for use with an Authentication Setting",
-          "_postman_isSubFolder": true
-        },
-        {
           "name": "Create Auth",
           "event": [
             {
@@ -684,6 +677,12 @@
           }
         }
       ]
+    },
+    {
+      "name": "Authentication Tokens",
+      "item": [],
+      "_postman_id": "0474873f-d508-43ee-83e3-648639022852",
+      "description": "Manage the Authentication Tokens for use with an Authentication Setting"
     },
     {
       "name": "Reports",
@@ -983,7 +982,7 @@
   ],
   "variable": [
     {
-      "id": "410eeb81-ca29-42dd-bf5e-b88945850af1",
+      "id": "e2156859-ffbb-40aa-a94c-84b13a265a0e",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
