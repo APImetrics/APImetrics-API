@@ -723,7 +723,8 @@
               "mode": "raw",
               "raw": "{\n    \"meta\": {\n        \"name\": \"Minimal Report name\"\n    }\n}"
             },
-            "url": "https://client.apimetrics.io/api/2/reports/"
+            "url": "https://client.apimetrics.io/api/2/reports/",
+            "description": "Create a new report."
           },
           "response": []
         },
@@ -971,7 +972,7 @@
   ],
   "variable": [
     {
-      "id": "d58380cd-8eb8-4cab-ac70-00513115704b",
+      "id": "f3ff2cec-0a35-470d-a142-1b2da1097ad7",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
