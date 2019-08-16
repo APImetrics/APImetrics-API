@@ -433,19 +433,6 @@
           "response": []
         },
         {
-          "name": "List Auth Settings",
-          "_postman_id": "55bb54c1-c034-4964-8dbc-3e6a734699f0",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": "https://client.apimetrics.io/api/2/auth/"
-          },
-          "response": []
-        },
-        {
           "name": "Get Auth",
           "_postman_id": "48e4d2a2-e471-4621-ae34-50f3956ba70e",
           "protocolProfileBehavior": {
@@ -479,6 +466,19 @@
               "raw": "{\n    \"meta\": {\n        \"name\": \"Auth Settings update\",\n        \"domain\": \"httpbin.org\"\n    },\n    \"settings\": {\n        \"auth_type\": \"OAUTH2_JWT\",\n        \"custom_variables\": {\n            \"foo\": \"bar\",\n            \"api\": 1,\n            \"access_token\": \"asfasdfasdfasdfasdfa\"\n        },\n        \"authorize_url\": \"http://httpbin.org/get\"\n    }\n}"
             },
             "url": "https://client.apimetrics.io/api/2/auth/{{auth_id}}/"
+          },
+          "response": []
+        },
+        {
+          "name": "List Auth Settings",
+          "_postman_id": "55bb54c1-c034-4964-8dbc-3e6a734699f0",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "https://client.apimetrics.io/api/2/auth/"
           },
           "response": []
         },
@@ -813,7 +813,7 @@
   ],
   "variable": [
     {
-      "id": "01cedcc9-c621-4812-83cc-8d92269d109f",
+      "id": "a5ad437b-0cc7-42e9-8057-f1236e7c7d9b",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
