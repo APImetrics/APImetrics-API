@@ -366,6 +366,28 @@
       "item": [
         {
           "name": "Create Auth",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "8c716522-f6cf-4082-ac22-cde3f8ac8b03",
+                "exec": [
+                  "",
+                  "pm.test(\"Successful POST request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+                  "});",
+                  "",
+                  "pm.test(\"Get Auth ID\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.id);",
+                  "    pm.environment.set(\"auth_id\", jsonData.id);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "_postman_id": "62a0dc3e-d63a-48d2-840c-daba12df42e3",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -769,7 +791,7 @@
   ],
   "variable": [
     {
-      "id": "946f6934-3e5a-4c1b-8796-9c3ea6fa5665",
+      "id": "495ef459-0fee-4fb2-a89c-7bd8cb68b023",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
