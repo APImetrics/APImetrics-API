@@ -847,7 +847,7 @@
           "response": []
         },
         {
-          "name": "List Tokens Copy",
+          "name": "List Tokens for an Auth Setting",
           "event": [
             {
               "listen": "test",
@@ -1213,7 +1213,7 @@
   ],
   "variable": [
     {
-      "id": "6cc82d71-1efa-4bad-9153-75882ff2aac7",
+      "id": "3624810a-cbba-49b6-a880-f7f3ba7803d1",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
