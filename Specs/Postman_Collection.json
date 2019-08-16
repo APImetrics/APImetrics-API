@@ -875,6 +875,41 @@
             "description": "Delete an existing Authentication Token."
           },
           "response": []
+        },
+        {
+          "name": "List Tokens Copy",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "c9e839d9-cb5c-4674-a417-dbc7bd349d89",
+                "exec": [
+                  "",
+                  "pm.test(\"Successful GET request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200]);",
+                  "});",
+                  "",
+                  "pm.test(\"Ensure Auth ID in List\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.results.find(obj => obj.id === pm.environment['auth_id']));",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "165aa055-6534-42b5-a286-9aed4b4044f2",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "https://client.apimetrics.io/api/2/tokens/",
+            "description": "Get a list of Authentication Tokens in your account."
+          },
+          "response": []
         }
       ],
       "_postman_id": "0474873f-d508-43ee-83e3-648639022852",
@@ -1178,7 +1213,7 @@
   ],
   "variable": [
     {
-      "id": "a10d1a97-6b84-4d84-9ce1-3e9e26c65acc",
+      "id": "8a292608-c990-414b-b392-6feb856717a8",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
