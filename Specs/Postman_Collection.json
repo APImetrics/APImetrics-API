@@ -651,6 +651,36 @@
             "description": "Delete an existing Authentication Setting."
           },
           "response": []
+        },
+        {
+          "name": "Delete Auth Copy",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "6702f001-d1ea-4698-b141-4992214d6b60",
+                "exec": [
+                  "",
+                  "pm.test(\"Successful DELETE request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200]);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "8bb4cd28-899b-49d8-b08e-41e1fd794c42",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "https://client.apimetrics.io/api/2/auth/{{auth_id}}/",
+            "description": "Delete an existing Authentication Setting."
+          },
+          "response": []
         }
       ],
       "_postman_id": "d6227989-0806-4c3c-9fd3-8fce0b7b3049",
@@ -1148,7 +1178,7 @@
   ],
   "variable": [
     {
-      "id": "cb33f705-e29e-4ba8-a8f9-1e6d2346d169",
+      "id": "661c87c8-9913-427a-978d-4dfb2b04674f",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
