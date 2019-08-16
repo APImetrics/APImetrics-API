@@ -806,7 +806,8 @@
               "mode": "raw",
               "raw": "{\n    \"meta\": {\n        \"name\": \"Minimal Report name\"\n    }\n}"
             },
-            "url": "https://client.apimetrics.io/api/2/reports/{{report_id}}/"
+            "url": "https://client.apimetrics.io/api/2/reports/{{report_id}}/",
+            "description": "Update an existing report."
           },
           "response": []
         },
@@ -973,7 +974,7 @@
   ],
   "variable": [
     {
-      "id": "10452ea1-3753-48f7-9904-ef0ca719a9db",
+      "id": "9d73173a-1de2-463b-92c3-dbca56943015",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
