@@ -505,6 +505,53 @@
           "response": []
         },
         {
+          "name": "Create Auth Copy",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "8c716522-f6cf-4082-ac22-cde3f8ac8b03",
+                "exec": [
+                  "",
+                  "pm.test(\"Successful POST request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+                  "});",
+                  "",
+                  "pm.test(\"Get Auth ID\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.id);",
+                  "    pm.environment.set(\"auth_id\", jsonData.id);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "3ac64e30-05d7-4214-8478-c7e54effd6f5",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"meta\": {\n        \"name\": \"Minimal Auth Settings name\",\n        \"domain\": \"httpbin.org\"\n    },\n    \"settings\": {\n        \"auth_type\": \"NONE\"\n    }\n}"
+            },
+            "url": "https://client.apimetrics.io/api/2/auth/",
+            "description": "Create a new Authentication Setting."
+          },
+          "response": []
+        },
+        {
           "name": "Get Auth",
           "event": [
             {
@@ -677,6 +724,12 @@
           }
         }
       ]
+    },
+    {
+      "name": "Authentication Tokens",
+      "item": [],
+      "_postman_id": "0474873f-d508-43ee-83e3-648639022852",
+      "description": "Manage the Authentication Tokens for use with an Authentication Setting"
     },
     {
       "name": "Reports",
@@ -944,12 +997,6 @@
         }
       ],
       "_postman_id": "a8ad5b77-9c1c-432b-8b4e-fba892c0f228"
-    },
-    {
-      "name": "Authentication Tokens",
-      "item": [],
-      "_postman_id": "0474873f-d508-43ee-83e3-648639022852",
-      "description": "Manage the Authentication Tokens for use with an Authentication Setting"
     }
   ],
   "auth": {
@@ -982,7 +1029,7 @@
   ],
   "variable": [
     {
-      "id": "9784ae48-eb24-4160-87c2-17f1cc56b76b",
+      "id": "e049a95d-c0d8-401a-865b-fc60535e7553",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
