@@ -418,7 +418,8 @@
           "request": {
             "method": "DELETE",
             "header": [],
-            "url": "https://client.apimetrics.io/api/2/workflows/{{workflow_id}}/"
+            "url": "https://client.apimetrics.io/api/2/workflows/{{workflow_id}}/",
+            "description": "Delete a workflow."
           },
           "response": []
         }
@@ -959,7 +960,7 @@
   ],
   "variable": [
     {
-      "id": "ef5dbe4f-b2b2-477b-9e2f-006f0641af83",
+      "id": "07014442-f05e-419c-8bed-7d4bbd64751f",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
