@@ -873,6 +873,7 @@
         }
       ],
       "_postman_id": "16494b5a-eb1e-4a00-a68a-61e8315d8957",
+      "description": "Manage the reports in your account.",
       "event": [
         {
           "listen": "prerequest",
@@ -970,7 +971,7 @@
   ],
   "variable": [
     {
-      "id": "4bcc83b0-aeee-47c7-af62-41e103a97bec",
+      "id": "d58380cd-8eb8-4cab-ac70-00513115704b",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
