@@ -817,7 +817,7 @@
           "request": {
             "method": "DELETE",
             "header": [],
-            "url": "https://client.apimetrics.io/api/2/calls/{{report_id}}/"
+            "url": "https://client.apimetrics.io/api/2/reports/{{report_id}}/"
           },
           "response": []
         }
@@ -920,7 +920,7 @@
   ],
   "variable": [
     {
-      "id": "cc0136ae-facb-421e-a821-29d148576bc8",
+      "id": "42182240-4f09-4c17-92b0-54110b50d6b2",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
