@@ -289,7 +289,7 @@
                   "pm.test(\"Get Workflow ID\", function () {",
                   "    var jsonData = pm.response.json();",
                   "    pm.expect(jsonData.id);",
-                  "    pm.environment.set(\"workflow\", jsonData.id);",
+                  "    pm.environment.set(\"workflow_id\", jsonData.id);",
                   "});",
                   ""
                 ],
@@ -835,7 +835,7 @@
   ],
   "variable": [
     {
-      "id": "26c76631-5898-425d-8652-a08604e2965c",
+      "id": "dc4e8249-a92d-4826-9888-c20cbe02d936",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
