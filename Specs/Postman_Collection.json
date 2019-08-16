@@ -763,6 +763,53 @@
             "description": "Get an existing Authentication Setting."
           },
           "response": []
+        },
+        {
+          "name": "Update Auth Copy",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "cf5fe0fd-29d9-4495-9903-c70e8e47f9f8",
+                "exec": [
+                  "",
+                  "pm.test(\"Successful UPDATE request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200]);",
+                  "});",
+                  "",
+                  "pm.test(\"Get Auth ID\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.id === pm.environment['auth_id']);",
+                  "    pm.environment.set(\"auth_id\", jsonData.id);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "bf4d0add-3c85-4b02-a83e-6e0e028c3f84",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"meta\": {\n        \"name\": \"Auth Settings update\",\n        \"domain\": \"httpbin.org\"\n    },\n    \"settings\": {\n        \"auth_type\": \"OAUTH2_JWT\",\n        \"custom_variables\": {\n            \"foo\": \"bar\",\n            \"api\": 1,\n            \"access_token\": \"asfasdfasdfasdfasdfa\"\n        },\n        \"authorize_url\": \"http://httpbin.org/get\"\n    }\n}"
+            },
+            "url": "https://client.apimetrics.io/api/2/auth/{{auth_id}}/",
+            "description": "Update an existing Authentication Setting."
+          },
+          "response": []
         }
       ],
       "_postman_id": "0474873f-d508-43ee-83e3-648639022852",
@@ -1066,7 +1113,7 @@
   ],
   "variable": [
     {
-      "id": "c3caa402-7b01-4cda-b752-b6e21f3f2f85",
+      "id": "f0946942-6464-4bc6-815d-7c3b13891137",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
