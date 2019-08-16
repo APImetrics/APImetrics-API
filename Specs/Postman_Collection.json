@@ -270,7 +270,8 @@
               "mode": "raw",
               "raw": "{\n    \"meta\": {\n        \"name\": \"Minimal Workflow name\"\n    }\n}"
             },
-            "url": "https://client.apimetrics.io/api/2/workflows/"
+            "url": "https://client.apimetrics.io/api/2/workflows/",
+            "description": "Creates a new Workflow."
           },
           "response": []
         },
@@ -955,7 +956,7 @@
   ],
   "variable": [
     {
-      "id": "d161ec25-611a-441e-95b1-fc5618adff58",
+      "id": "934e68f4-ffd5-4321-884e-93f4d933d08a",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
