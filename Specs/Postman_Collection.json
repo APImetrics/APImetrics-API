@@ -169,7 +169,8 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "https://client.apimetrics.io/api/2/calls/"
+            "url": "https://client.apimetrics.io/api/2/calls/",
+            "description": "Get a list of your API calls."
           },
           "response": []
         },
@@ -963,7 +964,7 @@
   ],
   "variable": [
     {
-      "id": "ca361487-aa64-4fe3-abf8-08c86b584a63",
+      "id": "d42fbb1b-ebff-4307-a8e1-68580e853213",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
