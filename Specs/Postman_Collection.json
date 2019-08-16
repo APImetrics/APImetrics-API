@@ -847,36 +847,6 @@
           "response": []
         },
         {
-          "name": "Delete Token",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "6702f001-d1ea-4698-b141-4992214d6b60",
-                "exec": [
-                  "",
-                  "pm.test(\"Successful DELETE request\", function () {",
-                  "    pm.expect(pm.response.code).to.be.oneOf([200]);",
-                  "});",
-                  ""
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "_postman_id": "8bb4cd28-899b-49d8-b08e-41e1fd794c42",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "DELETE",
-            "header": [],
-            "url": "https://client.apimetrics.io/api/2/auth/{{token_id}}/",
-            "description": "Delete an existing Authentication Token."
-          },
-          "response": []
-        },
-        {
           "name": "List Tokens Copy",
           "event": [
             {
@@ -908,6 +878,36 @@
             "header": [],
             "url": "https://client.apimetrics.io/api/2/tokens/",
             "description": "Get a list of Authentication Tokens in your account."
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Token",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "6702f001-d1ea-4698-b141-4992214d6b60",
+                "exec": [
+                  "",
+                  "pm.test(\"Successful DELETE request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200]);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "8bb4cd28-899b-49d8-b08e-41e1fd794c42",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "https://client.apimetrics.io/api/2/auth/{{token_id}}/",
+            "description": "Delete an existing Authentication Token."
           },
           "response": []
         }
@@ -1213,7 +1213,7 @@
   ],
   "variable": [
     {
-      "id": "2d177d7c-8f09-4afd-9cec-995d84edaf4a",
+      "id": "6cc82d71-1efa-4bad-9153-75882ff2aac7",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
