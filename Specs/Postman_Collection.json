@@ -771,10 +771,9 @@
                   "    pm.expect(pm.response.code).to.be.oneOf([200]);",
                   "});",
                   "",
-                  "pm.test(\"Get Call ID\", function () {",
+                  "pm.test(\"Ensure Report ID in List\", function () {",
                   "    var jsonData = pm.response.json();",
-                  "    pm.expect(jsonData.results);",
-                  "    pm.environment.set(\"report_id\", jsonData.results[0].id);",
+                  "    pm.expect(jsonData.results.find(obj => obj.id === pm.environment['report_id']));",
                   "});",
                   ""
                 ],
@@ -921,7 +920,7 @@
   ],
   "variable": [
     {
-      "id": "1f19ad85-248f-4005-94fd-f3106fa17ffb",
+      "id": "9e4f6e14-e47d-4e38-a244-1979528ee46f",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
