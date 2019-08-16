@@ -199,7 +199,8 @@
           "request": {
             "method": "DELETE",
             "header": [],
-            "url": "https://client.apimetrics.io/api/2/calls/{{call_id}}/"
+            "url": "https://client.apimetrics.io/api/2/calls/{{call_id}}/",
+            "description": "Delete an existing API call."
           },
           "response": []
         }
@@ -964,7 +965,7 @@
   ],
   "variable": [
     {
-      "id": "d42fbb1b-ebff-4307-a8e1-68580e853213",
+      "id": "c5f4b85f-d44f-4fa1-ba3f-2f0beb6fb304",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
