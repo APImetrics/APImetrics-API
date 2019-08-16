@@ -651,42 +651,6 @@
             "description": "Delete an existing Authentication Setting."
           },
           "response": []
-        },
-        {
-          "name": "Get Auth Copy",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "d3a819b6-ef6f-4eeb-b1ed-c57eb5364596",
-                "exec": [
-                  "",
-                  "pm.test(\"Successful GET request\", function () {",
-                  "    pm.expect(pm.response.code).to.be.oneOf([200]);",
-                  "});",
-                  "",
-                  "pm.test(\"Get Auth ID\", function () {",
-                  "    var jsonData = pm.response.json();",
-                  "    pm.expect(jsonData.id);",
-                  "    pm.environment.set(\"auth_id\", jsonData.id);",
-                  "});",
-                  ""
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "_postman_id": "b26ee7a1-bb53-4b5a-8871-7cf2590f4cb1",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": "https://client.apimetrics.io/api/2/auth/{{auth_id}}/",
-            "description": "Get an existing Authentication Setting."
-          },
-          "response": []
         }
       ],
       "_postman_id": "d6227989-0806-4c3c-9fd3-8fce0b7b3049",
@@ -761,6 +725,42 @@
             },
             "url": "https://client.apimetrics.io/api/2/auth/",
             "description": "Create a new Authentication Setting."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Auth Copy",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "d3a819b6-ef6f-4eeb-b1ed-c57eb5364596",
+                "exec": [
+                  "",
+                  "pm.test(\"Successful GET request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200]);",
+                  "});",
+                  "",
+                  "pm.test(\"Get Auth ID\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.id);",
+                  "    pm.environment.set(\"auth_id\", jsonData.id);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "b26ee7a1-bb53-4b5a-8871-7cf2590f4cb1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "https://client.apimetrics.io/api/2/auth/{{auth_id}}/",
+            "description": "Get an existing Authentication Setting."
           },
           "response": []
         }
@@ -1066,7 +1066,7 @@
   ],
   "variable": [
     {
-      "id": "ea701972-83eb-4edf-939e-1841eb2d06b7",
+      "id": "3cf04cca-5458-4a82-8158-4bf3e5bc2209",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
