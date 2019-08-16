@@ -229,6 +229,28 @@
       "item": [
         {
           "name": "Create Workflow",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "6b40042e-8a7c-49ec-a132-8754e08de658",
+                "exec": [
+                  "",
+                  "pm.test(\"Successful POST request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+                  "});",
+                  "",
+                  "pm.test(\"Get Workflow ID\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.id);",
+                  "    pm.environment.set(\"workflow_id\", jsonData.id);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "_postman_id": "f8aaa182-1bea-46b4-a110-5f93adae0eb3",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -747,7 +769,7 @@
   ],
   "variable": [
     {
-      "id": "1ce334fe-ccab-42d8-9e67-e4f491362e6d",
+      "id": "b8d1068c-2364-4cf0-8907-a7037542f798",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
