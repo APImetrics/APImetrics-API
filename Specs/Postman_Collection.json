@@ -499,7 +499,8 @@
               "mode": "raw",
               "raw": "{\n    \"meta\": {\n        \"name\": \"Minimal Auth Settings name\",\n        \"domain\": \"httpbin.org\"\n    },\n    \"settings\": {\n        \"auth_type\": \"NONE\"\n    }\n}"
             },
-            "url": "https://client.apimetrics.io/api/2/auth/"
+            "url": "https://client.apimetrics.io/api/2/auth/",
+            "description": "Create a new Authentication Setting."
           },
           "response": []
         },
@@ -534,7 +535,8 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "https://client.apimetrics.io/api/2/auth/{{auth_id}}/"
+            "url": "https://client.apimetrics.io/api/2/auth/{{auth_id}}/",
+            "description": "Get an existing Authentication Setting."
           },
           "response": []
         },
@@ -965,7 +967,7 @@
   ],
   "variable": [
     {
-      "id": "c5f4b85f-d44f-4fa1-ba3f-2f0beb6fb304",
+      "id": "ab7c2751-1ccf-4c1a-9133-b16d86a3e391",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
