@@ -396,6 +396,7 @@
               "script": {
                 "id": "38778408-70fd-406b-bc25-6c2f37f10ffc",
                 "exec": [
+                  "",
                   "pm.test(\"Successful DELETE request\", function () {",
                   "    pm.expect(pm.response.code).to.be.oneOf([200]);",
                   "});",
@@ -607,6 +608,22 @@
         },
         {
           "name": "Delete Auth",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "6702f001-d1ea-4698-b141-4992214d6b60",
+                "exec": [
+                  "",
+                  "pm.test(\"Successful DELETE request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200]);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "_postman_id": "2a6c3bff-8089-4d41-8fd5-976011480f87",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -935,7 +952,7 @@
   ],
   "variable": [
     {
-      "id": "3c1262be-69df-42cf-9e0d-fce6a68411b1",
+      "id": "ac96f025-be71-40d0-87bc-2861b763fd87",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
