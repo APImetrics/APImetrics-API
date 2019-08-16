@@ -135,7 +135,7 @@
                 "exec": [
                   "",
                   "pm.test(\"Successful UPDATE request\", function () {",
-                  "    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200]);",
                   "});",
                   "",
                   "pm.test(\"Get Call ID\", function () {",
@@ -748,7 +748,7 @@
   ],
   "variable": [
     {
-      "id": "54157b24-8735-4bb0-b561-89f4be265040",
+      "id": "8583a40d-d83a-4c16-ba41-30daeee24b13",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
