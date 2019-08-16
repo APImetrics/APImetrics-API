@@ -151,8 +151,7 @@
                   "",
                   "pm.test(\"Get Call ID\", function () {",
                   "    var jsonData = pm.response.json();",
-                  "    pm.expect(jsonData.results);",
-                  "    pm.environment.set(\"call_id\", jsonData.results[0].id);",
+                  "    pm.expect(jsonData.results.find(call => call.id === pm.environment['call_id']));",
                   "});",
                   ""
                 ],
@@ -748,7 +747,7 @@
   ],
   "variable": [
     {
-      "id": "a43075f4-3750-4f16-844d-4e5cc4fc9778",
+      "id": "dc1b9e32-1413-406a-97f5-129dcc7d45fa",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
