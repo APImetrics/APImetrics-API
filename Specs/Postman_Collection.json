@@ -847,7 +847,7 @@
           "response": []
         },
         {
-          "name": "Delete Auth Copy",
+          "name": "Delete Token",
           "event": [
             {
               "listen": "test",
@@ -872,7 +872,7 @@
             "method": "DELETE",
             "header": [],
             "url": "https://client.apimetrics.io/api/2/auth/{{token_id}}/",
-            "description": "Delete an existing Authentication Setting."
+            "description": "Delete an existing Authentication Token."
           },
           "response": []
         }
@@ -1178,7 +1178,7 @@
   ],
   "variable": [
     {
-      "id": "b6be222f-e79a-4483-8f7e-2508e95cbae1",
+      "id": "53f1a52a-2826-4ff9-884c-5962a2cec964",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
