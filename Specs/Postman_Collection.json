@@ -841,7 +841,8 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "https://client.apimetrics.io/api/2/reports/"
+            "url": "https://client.apimetrics.io/api/2/reports/",
+            "description": "Get a list of existing reports in your account."
           },
           "response": []
         },
@@ -974,7 +975,7 @@
   ],
   "variable": [
     {
-      "id": "9d73173a-1de2-463b-92c3-dbca56943015",
+      "id": "fb21cd03-7259-4449-8218-f45018fab7a3",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
