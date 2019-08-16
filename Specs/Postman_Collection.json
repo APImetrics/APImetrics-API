@@ -228,6 +228,30 @@
       "name": "Workflows",
       "item": [
         {
+          "name": "Create Workflow",
+          "_postman_id": "f8aaa182-1bea-46b4-a110-5f93adae0eb3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"meta\": {\n        \"name\": \"Minimal Workflow name\"\n    }\n}"
+            },
+            "url": "https://client.apimetrics.io/api/2/workflows/"
+          },
+          "response": []
+        },
+        {
           "name": "List Workflows",
           "_postman_id": "ee9ac832-458c-4fab-8e54-525b745ab102",
           "protocolProfileBehavior": {
@@ -250,30 +274,6 @@
             "method": "GET",
             "header": [],
             "url": "https://client.apimetrics.io/api/2/workflows/{{workflow_id}}/"
-          },
-          "response": []
-        },
-        {
-          "name": "Create Workflow",
-          "_postman_id": "f8aaa182-1bea-46b4-a110-5f93adae0eb3",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"meta\": {\n        \"name\": \"Minimal Workflow name\"\n    }\n}"
-            },
-            "url": "https://client.apimetrics.io/api/2/workflows/"
           },
           "response": []
         },
@@ -747,7 +747,7 @@
   ],
   "variable": [
     {
-      "id": "dc1b9e32-1413-406a-97f5-129dcc7d45fa",
+      "id": "b75ab9f1-6c34-4dcb-90ce-6958456c8bd3",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
