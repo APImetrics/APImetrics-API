@@ -114,6 +114,16 @@
                 ],
                 "type": "text/javascript"
               }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "e2d4b8f1-6782-4230-9439-f8942d281d6f",
+                "exec": [
+                  "pm.expect(pm.environment.get(\"call_id\")).is.not.oneOf([undefined, null, ''])"
+                ],
+                "type": "text/javascript"
+              }
             }
           ],
           "_postman_id": "ff90fc6e-5476-470b-9cf5-6c226ae4190d",
@@ -1390,7 +1400,7 @@
   ],
   "variable": [
     {
-      "id": "5ea8e18d-b3de-418f-ace8-08615e35403e",
+      "id": "01596f04-c520-4967-bb5f-41a8deb28d19",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
