@@ -775,7 +775,7 @@
               "script": {
                 "id": "edda0108-ed42-4657-94c0-aab7ee0715ee",
                 "exec": [
-                  "pm.expect(pm.environment.get(\"token_id\"))"
+                  "pm.expect(pm.environment.get(\"token_id\")).is.not.oneOf([undefined, null, ''])"
                 ],
                 "type": "text/javascript"
               }
@@ -1313,7 +1313,7 @@
   ],
   "variable": [
     {
-      "id": "1f0b4a0b-bdf7-4905-899a-a697f7134819",
+      "id": "e49ba67e-540d-466d-b74e-e69ca533daaa",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
