@@ -155,8 +155,8 @@
                   "pm.test(\"Ensure Call ID in List\", function () {",
                   "    var jsonData = pm.response.json();",
                   "    var objId = pm.environment['call_id'];",
-                  "    var found = jsonData.results.find(obj => obj.id === objId);",
-                  "    pm.expect(found, \"Expecting id \" + objId + ' in list').to.not.be.undefined;",
+                  "    var found = jsonData.results.filter(obj => obj.id === objId);",
+                  "    pm.expect(found.length, \"Expecting id \" + objId + ' in list').to.eql(1);",
                   "});",
                   ""
                 ],
@@ -562,7 +562,8 @@
                   "    pm.expect(jsonData.id === pm.environment['auth_id']);",
                   "    pm.environment.set(\"auth_id\", jsonData.id);",
                   "});",
-                  ""
+                  "",
+                  "postman.setNextRequest('Create Token');"
                 ],
                 "type": "text/javascript"
               }
@@ -1226,7 +1227,7 @@
   ],
   "variable": [
     {
-      "id": "634b0ec9-dfb1-4742-a3cb-4ca1c1203809",
+      "id": "fb199395-f871-4594-be78-f5cfc82ce50a",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
