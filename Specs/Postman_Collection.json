@@ -769,6 +769,16 @@
                 ],
                 "type": "text/javascript"
               }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "edda0108-ed42-4657-94c0-aab7ee0715ee",
+                "exec": [
+                  "pm.expect(pm.environment.get(\"token_id\"))"
+                ],
+                "type": "text/javascript"
+              }
             }
           ],
           "_postman_id": "b26ee7a1-bb53-4b5a-8871-7cf2590f4cb1",
@@ -898,6 +908,16 @@
                   "    pm.expect(found, \"Expecting id \" + objId + ' in list').to.not.be.undefined;",
                   "});",
                   ""
+                ],
+                "type": "text/javascript"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "9ee100d5-b03f-4bea-ae6e-a8e8260063da",
+                "exec": [
+                  "pm.expect(pm.environment.get(\"auth_id\"))"
                 ],
                 "type": "text/javascript"
               }
@@ -1038,7 +1058,8 @@
               "script": {
                 "id": "a332813d-5f7f-48db-a44d-86da3a724858",
                 "exec": [
-                  "pm.expect(pm.environment.get(\"report_id\"))"
+                  "pm.expect(pm.environment.get(\"report_id\"))",
+                  ""
                 ],
                 "type": "text/javascript"
               }
@@ -1292,7 +1313,7 @@
   ],
   "variable": [
     {
-      "id": "c5c775b0-6563-4b05-abbf-c22b7284d1e6",
+      "id": "ce864ac5-f7bc-4174-851d-4b67de3a0429",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
