@@ -31,6 +31,16 @@
                 ],
                 "type": "text/javascript"
               }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "17c02e21-3001-4de9-a2e2-de17b7f4619a",
+                "exec": [
+                  "pm.expect(pm.environment.get(\"call_id\")).is.not.oneOf([undefined, null, ''])"
+                ],
+                "type": "text/javascript"
+              }
             }
           ],
           "_postman_id": "2f4ae453-f66c-4acd-81c8-c2d47a388b90",
@@ -165,9 +175,19 @@
                   "pm.test(\"Ensure Call ID in List\", function () {",
                   "    var jsonData = pm.response.json();",
                   "    var objId = pm.environment.get('call_id');",
-                  "    var found = jsonData.results.filter(obj => obj.id === objId);",
-                  "    pm.expect(found.length, \"Expecting id \" + objId + ' in list').to.eql(1);",
+                  "    var found = jsonData.results.find(obj => obj.id === objId);",
+                  "    pm.expect(found, \"Expecting id \" + objId + ' in list').is.not.undefined;",
                   "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "ea8b0849-7df5-4067-a684-eea53e88b7eb",
+                "exec": [
                   ""
                 ],
                 "type": "text/javascript"
@@ -1400,7 +1420,7 @@
   ],
   "variable": [
     {
-      "id": "01596f04-c520-4967-bb5f-41a8deb28d19",
+      "id": "b38a8b8a-e7ed-4885-bb23-9c94672f8906",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
