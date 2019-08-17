@@ -904,7 +904,7 @@
                   "    pm.expect(pm.response.code).to.be.oneOf([200]);",
                   "});",
                   "",
-                  "pm.setNextRequest('List Auth Settings');"
+                  "postman.setNextRequest('List Auth Settings');"
                 ],
                 "type": "text/javascript"
               }
@@ -1226,7 +1226,7 @@
   ],
   "variable": [
     {
-      "id": "b726707c-c0a7-4b15-a313-29e30ca81a1f",
+      "id": "634b0ec9-dfb1-4742-a3cb-4ca1c1203809",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
