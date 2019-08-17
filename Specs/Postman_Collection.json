@@ -767,7 +767,7 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "https://client.apimetrics.io/api/2/token/{{token_id}}/",
+            "url": "https://client.apimetrics.io/api/2/tokens/{{token_id}}/",
             "description": "Get an existing Authentication Token."
           },
           "response": []
@@ -794,6 +794,16 @@
                 ],
                 "type": "text/javascript"
               }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "ca8f79bf-55b9-40d0-878f-69c05411e202",
+                "exec": [
+                  "pm.expect(pm.environment.get(\"token_id\"))"
+                ],
+                "type": "text/javascript"
+              }
             }
           ],
           "_postman_id": "bf4d0add-3c85-4b02-a83e-6e0e028c3f84",
@@ -814,7 +824,7 @@
               "mode": "raw",
               "raw": "{\n    \"meta\": {\n    \t\"auth_id\": \"{{auth_id}}\",\n        \"name\": \"Auth Token update\"\n    },\n    \"token\": {\n        \"expires_in\": 1800, \n        \"access_token\": \"pb1tKMspuoCa5EuJ6AlkWT87wg2-FsXzcCy-YYtAp-vArkR7PmfBqB0Z1V6_uC2eMB1Y\"\n    }\n}"
             },
-            "url": "https://client.apimetrics.io/api/2/auth/{{token_id}}/",
+            "url": "https://client.apimetrics.io/api/2/tokens/{{token_id}}/",
             "description": "Update an existing Authentication Setting."
           },
           "response": []
@@ -907,6 +917,16 @@
                   "});",
                   "",
                   "postman.setNextRequest('List Auth Settings');"
+                ],
+                "type": "text/javascript"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "35fbac63-fc7e-453e-b11f-d4c76dc2ad54",
+                "exec": [
+                  "pm.expect(pm.environment.get(\"token_id\"))"
                 ],
                 "type": "text/javascript"
               }
@@ -1228,7 +1248,7 @@
   ],
   "variable": [
     {
-      "id": "409e62ea-f618-4388-bb30-2cde784fb4d5",
+      "id": "57c180ec-5bb4-4f7d-a736-81f34a9b492d",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
