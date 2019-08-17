@@ -394,7 +394,7 @@
               "script": {
                 "id": "c821667a-e45d-432e-bed0-8ac9b1969d26",
                 "exec": [
-                  "pm.expect(pm.environment.get(\"workflow_id\")).is.not.oneOf([undefined, null, ''])"
+                  ""
                 ],
                 "type": "text/javascript"
               }
@@ -1360,7 +1360,7 @@
   ],
   "variable": [
     {
-      "id": "9f55902d-d706-4e04-9e09-6710bf01edcd",
+      "id": "54977af1-df53-4574-9e15-027a54420fb2",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
