@@ -49,7 +49,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"meta\": {\n        \"name\": \"Minimal API test name\"\n    },\n    \"request\": {\n        \"method\": \"get\",\n        \"url\": \"http://google.apimetrics.xyz/get\"\n    }\n}"
+              "raw": "{\n    \"meta\": {\n        \"name\": \"AAA  Minimal API test name\"\n    },\n    \"request\": {\n        \"method\": \"get\",\n        \"url\": \"http://google.apimetrics.xyz/get\"\n    }\n}"
             },
             "url": "https://client.apimetrics.io/api/2/calls/",
             "description": "Create a new API call."
@@ -1313,7 +1313,7 @@
   ],
   "variable": [
     {
-      "id": "ce864ac5-f7bc-4174-851d-4b67de3a0429",
+      "id": "374761f1-677e-4c69-a159-7b8863d48f67",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
