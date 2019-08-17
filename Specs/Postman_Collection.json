@@ -1016,8 +1016,7 @@
                   "    var objId = pm.environment.get('token_id');",
                   "    var found = jsonData.results.find(obj => obj.id === objId);",
                   "    pm.expect(found, \"Expecting id \" + objId + ' in list').to.not.be.undefined;",
-                  "});",
-                  ""
+                  "});"
                 ],
                 "type": "text/javascript"
               }
@@ -1420,7 +1419,7 @@
   ],
   "variable": [
     {
-      "id": "4626aac4-ea6e-4477-a500-d4815651fff3",
+      "id": "82922bd0-785e-4eb1-b9d4-ddaf8392c791",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
