@@ -418,6 +418,16 @@
                 ],
                 "type": "text/javascript"
               }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "ad213492-70ba-490e-8019-a59387d03807",
+                "exec": [
+                  "pm.expect(pm.environment.get(\"workflow_id\")).is.not.oneOf([undefined, null, ''])"
+                ],
+                "type": "text/javascript"
+              }
             }
           ],
           "_postman_id": "54efc38c-ab86-4db3-be9b-c74a95750f50",
@@ -530,6 +540,16 @@
                 ],
                 "type": "text/javascript"
               }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "b6468a03-5d8e-4561-b20f-373a3188b82d",
+                "exec": [
+                  "pm.expect(pm.environment.get(\"auth_id\")).is.not.oneOf([undefined, null, ''])"
+                ],
+                "type": "text/javascript"
+              }
             }
           ],
           "_postman_id": "48e4d2a2-e471-4621-ae34-50f3956ba70e",
@@ -564,6 +584,16 @@
                   "});",
                   "",
                   "postman.setNextRequest('Create Token');"
+                ],
+                "type": "text/javascript"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "082f21ae-ddb3-4483-8b8e-f646cac220ff",
+                "exec": [
+                  "pm.expect(pm.environment.get(\"auth_id\")).is.not.oneOf([undefined, null, ''])"
                 ],
                 "type": "text/javascript"
               }
@@ -1320,7 +1350,7 @@
   ],
   "variable": [
     {
-      "id": "c9b31a8c-eff7-4a82-acfb-fbca0d12cbac",
+      "id": "4af1cf7d-a430-40d7-b434-d45d6494ac6e",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
