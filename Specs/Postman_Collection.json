@@ -1075,7 +1075,7 @@
                   "",
                   "pm.test(\"Ensure Report ID in List\", function () {",
                   "    var jsonData = pm.response.json();",
-                  "    var objId = pm.environment['report_id'];",
+                  "    var objId = pm.environment.get('report_id');",
                   "    var found = jsonData.results.find(obj => obj.id === objId);",
                   "    pm.expect(found, \"Expecting id \" + objId + ' in list').to.not.be.undefined;",
                   "});",
@@ -1227,7 +1227,7 @@
   ],
   "variable": [
     {
-      "id": "dceedefc-778b-4258-aeee-3c99e88eb739",
+      "id": "1a45a47d-fcf0-4e28-ba12-cebe7126ec5c",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
