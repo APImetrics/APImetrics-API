@@ -1036,7 +1036,7 @@
               "script": {
                 "id": "9ee100d5-b03f-4bea-ae6e-a8e8260063da",
                 "exec": [
-                  "pm.expect(pm.environment.get(\"auth_id\")).is.not.oneOf([undefined, null, ''])"
+                  "pm.expect(pm.environment.get(\"auth_id\")).is.not.oneOf([undefined, null, '']);"
                 ],
                 "type": "text/javascript"
               }
@@ -1429,7 +1429,7 @@
   ],
   "variable": [
     {
-      "id": "ef816bad-0d50-433c-bb53-6e2d6c672341",
+      "id": "59d969ec-5ab3-47ad-8173-b8e97fad162f",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
