@@ -723,15 +723,15 @@
               {
                 "key": "Content-Type",
                 "name": "Content-Type",
-                "type": "text",
-                "value": "application/json"
+                "value": "application/json",
+                "type": "text"
               }
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"meta\": {\n    \t\"auth_id\": \"{{auth_id}}\",\n        \"name\": \"Auth Token create\"\n    }\n}"
+              "raw": "{\n    \"meta\": {\n        \"auth_id\": \"{{auth_id}}\",\n        \"name\": \"Auth Token create\"\n    }\n}"
             },
-            "url": "https://client.apimetrics.io/api/2/token/",
+            "url": "https://client.apimetrics.io/api/2/tokens/",
             "description": "Create a new Authentication Token."
           },
           "response": []
@@ -1228,7 +1228,7 @@
   ],
   "variable": [
     {
-      "id": "aca4aa0b-fd2b-4eea-b884-15a08a325157",
+      "id": "409e62ea-f618-4388-bb30-2cde784fb4d5",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
