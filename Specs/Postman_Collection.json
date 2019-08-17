@@ -154,7 +154,9 @@
                   "",
                   "pm.test(\"Ensure Call ID in List\", function () {",
                   "    var jsonData = pm.response.json();",
-                  "    pm.expect(jsonData.results.find(obj => obj.id === pm.environment['workflow_id']));",
+                  "    var objId = pm.environment['call_id'];",
+                  "    var found = jsonData.results.find(obj => obj.id === objId);",
+                  "    pm.expect(found, \"Expecting id \" + objId + ' in list').to.not.be.undefined;",
                   "});",
                   ""
                 ],
@@ -378,7 +380,9 @@
                   "",
                   "pm.test(\"Ensure Workflow ID in List\", function () {",
                   "    var jsonData = pm.response.json();",
-                  "    pm.expect(jsonData.results.find(obj => obj.id === pm.environment['workflow_id']));",
+                  "    var objId = pm.environment['workflow_id'];",
+                  "    var found = jsonData.results.find(obj => obj.id === objId);",
+                  "    pm.expect(found, \"Expecting id \" + objId + ' in list').to.not.be.undefined;",
                   "});",
                   ""
                 ],
@@ -600,9 +604,11 @@
                   "    pm.expect(pm.response.code).to.be.oneOf([200]);",
                   "});",
                   "",
-                  "pm.test(\"Ensure Auth ID in List\", function () {",
+                  "pm.test(\"Ensure Auth  ID in List\", function () {",
                   "    var jsonData = pm.response.json();",
-                  "    pm.expect(jsonData.results.find(obj => obj.id === pm.environment['auth_id']));",
+                  "    var objId = pm.environment['auth_id'];",
+                  "    var found = jsonData.results.find(obj => obj.id === objId);",
+                  "    pm.expect(found, \"Expecting id \" + objId + ' in list').to.not.be.undefined;",
                   "});",
                   ""
                 ],
@@ -826,8 +832,9 @@
                   "",
                   "pm.test(\"Ensure Token ID in List\", function () {",
                   "    var jsonData = pm.response.json();",
-                  "    var found = jsonData.results.find(obj => obj.id === pm.environment['token_id'])",
-                  "    pm.expect(found).to.not.be.undefined;",
+                  "    var objId = pm.environment['token_id'];",
+                  "    var found = jsonData.results.find(obj => obj.id === objId);",
+                  "    pm.expect(found, \"Expecting id \" + objId + ' in list').to.not.be.undefined;",
                   "});",
                   ""
                 ],
@@ -1214,7 +1221,7 @@
   ],
   "variable": [
     {
-      "id": "bd5079c8-979f-4a2c-8ca9-1b082f864dfd",
+      "id": "56851774-90be-47bb-9b11-34957faccba8",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
