@@ -641,7 +641,8 @@
                   "pm.test(\"Successful DELETE request\", function () {",
                   "    pm.expect(pm.response.code).to.be.oneOf([200]);",
                   "});",
-                  ""
+                  "",
+                  "postman.setNextRequest('Create Report');"
                 ],
                 "type": "text/javascript"
               }
@@ -1227,7 +1228,7 @@
   ],
   "variable": [
     {
-      "id": "1a45a47d-fcf0-4e28-ba12-cebe7126ec5c",
+      "id": "aca4aa0b-fd2b-4eea-b884-15a08a325157",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
