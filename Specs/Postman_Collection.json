@@ -340,6 +340,16 @@
                 ],
                 "type": "text/javascript"
               }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "ed538a29-8946-44af-a9e1-276e74318705",
+                "exec": [
+                  "pm.expect(pm.environment.get(\"workflow_id\")).is.not.oneOf([undefined, null, ''])"
+                ],
+                "type": "text/javascript"
+              }
             }
           ],
           "_postman_id": "8d352b40-7caa-4326-8017-cb9d007d9ed4",
@@ -1360,7 +1370,7 @@
   ],
   "variable": [
     {
-      "id": "54977af1-df53-4574-9e15-027a54420fb2",
+      "id": "1d6fd860-c242-4075-9734-43abc342903b",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
