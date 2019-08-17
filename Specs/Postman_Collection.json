@@ -903,7 +903,8 @@
                   "pm.test(\"Successful DELETE request\", function () {",
                   "    pm.expect(pm.response.code).to.be.oneOf([200]);",
                   "});",
-                  ""
+                  "",
+                  "pm.setNextRequest('List Auth Settings');"
                 ],
                 "type": "text/javascript"
               }
@@ -1225,7 +1226,7 @@
   ],
   "variable": [
     {
-      "id": "6d18370d-9614-4723-9c4b-d339539ff2dd",
+      "id": "b726707c-c0a7-4b15-a313-29e30ca81a1f",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
