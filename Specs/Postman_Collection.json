@@ -1090,7 +1090,7 @@
           "request": {
             "method": "DELETE",
             "header": [],
-            "url": "https://client.apimetrics.io/api/2/auth/{{token_id}}/",
+            "url": "https://client.apimetrics.io/api/2/tokens/{{token_id}}/",
             "description": "Delete an existing Authentication Token."
           },
           "response": []
@@ -1429,7 +1429,7 @@
   ],
   "variable": [
     {
-      "id": "f0c548b2-5c1a-4f4c-93fa-c17d9bc25002",
+      "id": "da0c0144-76c9-4f15-9fe4-780516b55ed8",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
