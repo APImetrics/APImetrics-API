@@ -1077,7 +1077,7 @@
               "script": {
                 "id": "35fbac63-fc7e-453e-b11f-d4c76dc2ad54",
                 "exec": [
-                  "pm.expect(pm.environment.get(\"token_id\")).is.not.oneOf([undefined, null, ''])"
+                  "pm.expect(pm.environment.get(\"token_id\")).is.not.oneOf([undefined, null, '']);"
                 ],
                 "type": "text/javascript"
               }
@@ -1177,7 +1177,7 @@
               "script": {
                 "id": "a332813d-5f7f-48db-a44d-86da3a724858",
                 "exec": [
-                  "pm.expect(pm.environment.get(\"report_id\")).is.not.oneOf([undefined, null, ''])"
+                  "pm.expect(pm.environment.get(\"report_id\")).is.not.oneOf([undefined, null, '']);"
                 ],
                 "type": "text/javascript"
               }
@@ -1429,7 +1429,7 @@
   ],
   "variable": [
     {
-      "id": "59d969ec-5ab3-47ad-8173-b8e97fad162f",
+      "id": "4ca85fdf-e3c7-4cdb-bff2-b3a2f53bc4bb",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
