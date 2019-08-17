@@ -1192,8 +1192,7 @@
               "script": {
                 "id": "39cce358-bc05-4c1f-a6ec-5957883613f0",
                 "exec": [
-                  "pm.expect(pm.environment.get(\"report_id\"))",
-                  ""
+                  "pm.expect(pm.environment.get(\"report_id\")).is.not.oneOf([undefined, null, ''])"
                 ],
                 "type": "text/javascript"
               }
@@ -1311,7 +1310,7 @@
   ],
   "variable": [
     {
-      "id": "56eadd2e-0885-42d8-9b61-ef9d5ad5696b",
+      "id": "6db9f86b-e78f-4994-8157-32330b023c04",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
