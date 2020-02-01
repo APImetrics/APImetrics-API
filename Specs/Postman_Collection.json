@@ -1402,7 +1402,7 @@
       "name": "Account APIs",
       "item": [
         {
-          "name": "Get Account Projecst",
+          "name": "Get Account Projects",
           "_postman_id": "c6f537d1-beb6-4c26-9f05-613944516246",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -1448,7 +1448,7 @@
   ],
   "variable": [
     {
-      "id": "62037837-a745-4b6d-b0a6-0841845f5260",
+      "id": "73d02bc2-cfc3-49bb-963f-e100146d28e1",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
