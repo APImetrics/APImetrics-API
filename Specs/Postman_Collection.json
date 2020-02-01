@@ -1402,8 +1402,21 @@
       "name": "Account APIs",
       "item": [
         {
-          "name": "Get Account Projects",
+          "name": "[Admin] Get Account Projects",
           "_postman_id": "c6f537d1-beb6-4c26-9f05-613944516246",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
+        },
+        {
+          "name": "[Admin] Get Account Projects Copy",
+          "_postman_id": "a5a8ec69-c6b0-46a0-b815-c2cf22ac78ab",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
           },
@@ -1448,7 +1461,7 @@
   ],
   "variable": [
     {
-      "id": "73d02bc2-cfc3-49bb-963f-e100146d28e1",
+      "id": "cdfa3274-172f-48eb-99bc-66650d3bbac5",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
