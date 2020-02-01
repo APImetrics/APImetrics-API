@@ -1400,7 +1400,21 @@
     },
     {
       "name": "Account APIs",
-      "item": [],
+      "item": [
+        {
+          "name": "Get Account Projecst",
+          "_postman_id": "c6f537d1-beb6-4c26-9f05-613944516246",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
+        }
+      ],
       "_postman_id": "887e8c03-f108-4258-a5ae-25290c60224b"
     }
   ],
@@ -1434,7 +1448,7 @@
   ],
   "variable": [
     {
-      "id": "f265540f-7fa9-4ebc-955a-e017d1faa6ea",
+      "id": "62037837-a745-4b6d-b0a6-0841845f5260",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
