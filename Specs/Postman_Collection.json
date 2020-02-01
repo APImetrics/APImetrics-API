@@ -931,8 +931,8 @@
               "script": {
                 "id": "ca8f79bf-55b9-40d0-878f-69c05411e202",
                 "exec": [
-                  "pm.expect(pm.environment.get(\"auth_id\")).is.not.oneOf([undefined, null, ''])",
-                  "pm.expect(pm.environment.get(\"token_id\")).is.not.oneOf([undefined, null, ''])"
+                  "pm.expect(pm.environment.get(\"auth_id\")).is.not.oneOf([undefined, null, '']);",
+                  "pm.expect(pm.environment.get(\"token_id\")).is.not.oneOf([undefined, null, '']);"
                 ],
                 "type": "text/javascript"
               }
@@ -1397,6 +1397,11 @@
         }
       ],
       "_postman_id": "a8ad5b77-9c1c-432b-8b4e-fba892c0f228"
+    },
+    {
+      "name": "Account APIs",
+      "item": [],
+      "_postman_id": "887e8c03-f108-4258-a5ae-25290c60224b"
     }
   ],
   "auth": {
@@ -1429,7 +1434,7 @@
   ],
   "variable": [
     {
-      "id": "da0c0144-76c9-4f15-9fe4-780516b55ed8",
+      "id": "c7524360-6df2-425a-8827-a18a2e218744",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
