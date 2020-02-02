@@ -1402,7 +1402,7 @@
       "name": "Account APIs",
       "item": [
         {
-          "name": "[Admin] Get Account Projects",
+          "name": "Get Account Projects",
           "event": [
             {
               "listen": "test",
@@ -1536,7 +1536,7 @@
   ],
   "variable": [
     {
-      "id": "768632f1-a10b-48a3-95e0-ad2e29dbfec4",
+      "id": "ac3e20b0-9a28-4238-b158-326e106b9250",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
