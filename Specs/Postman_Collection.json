@@ -1457,7 +1457,7 @@
                   "pm.test(\"Has result with ID\", function () {",
                   "    var jsonData = pm.response.json();",
                   "    pm.expect(jsonData.results.length).to.be.above(0);",
-                  "    pm.environment.set(\"account_org_id\", jsonData.results[0].id);",
+                  "    pm.environment.set(\"account_project_id\", jsonData.results[0].id);",
                   "});",
                   "",
                   ""
@@ -1479,7 +1479,7 @@
             },
             "method": "GET",
             "header": [],
-            "url": "{{base_url}}/api/2/account/organization/{{org_id}}/"
+            "url": "{{base_url}}/api/2/account/projects/"
           },
           "response": []
         },
@@ -1536,7 +1536,7 @@
   ],
   "variable": [
     {
-      "id": "7e4d6940-ede6-40c0-903f-dd7703c4ffd1",
+      "id": "e3b8cda2-9953-4106-a75a-df6d1615cce5",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
