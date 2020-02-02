@@ -1443,7 +1443,7 @@
           "response": []
         },
         {
-          "name": "[Admin] Get Account Project",
+          "name": "[Admin] Get Account Org Project",
           "_postman_id": "a5a8ec69-c6b0-46a0-b815-c2cf22ac78ab",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -1495,7 +1495,7 @@
   ],
   "variable": [
     {
-      "id": "3c6f15a2-8215-4caa-9206-10606074f883",
+      "id": "7b085d2e-3e6f-4c62-8254-71f5ab400958",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
