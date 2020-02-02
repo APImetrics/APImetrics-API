@@ -1449,9 +1449,15 @@
             "disableBodyPruning": true
           },
           "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{access_token}}"
+              }
+            },
             "method": "GET",
             "header": [],
-            "url": ""
+            "url": "{{base_url}}/api/2/account/organization/{{org_id}}/{{account_org_id}}/"
           },
           "response": []
         }
@@ -1489,7 +1495,7 @@
   ],
   "variable": [
     {
-      "id": "811fe49f-9aca-408e-aa32-f9f2ea024803",
+      "id": "763840e0-a58f-4710-ae03-8057ae6be4c4",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
