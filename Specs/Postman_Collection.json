@@ -1484,6 +1484,47 @@
           "response": []
         },
         {
+          "name": "[Admin] Get Account Projects in Org Copy",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "b957e9ce-edeb-4833-978a-e585926e677a",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test(\"Has result with ID\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.results.length).to.be.above(0);",
+                  "    pm.environment.set(\"project_id\", jsonData.results[0].id);",
+                  "});",
+                  "",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "8c970cbb-b8f9-4c81-8cb7-b769d70770df",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{access_token}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/api/2/account/projects/organization/{{org_id}}/"
+          },
+          "response": []
+        },
+        {
           "name": "[Admin] Get Org Accounts",
           "event": [
             {
@@ -1577,7 +1618,7 @@
   ],
   "variable": [
     {
-      "id": "26535936-059d-4ba0-bdf7-3cc196d570b6",
+      "id": "678b2d0d-c80d-4676-a0c7-36e2fd0562a4",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
