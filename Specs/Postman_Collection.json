@@ -1583,6 +1583,47 @@
             "url": "{{base_url}}/api/2/account/organization/{{org_id}}/{{account_org_id}}/"
           },
           "response": []
+        },
+        {
+          "name": "[Admin] Get Account Projects by Project ID Copy",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "b957e9ce-edeb-4833-978a-e585926e677a",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "// pm.test(\"Has result with ID\", function () {",
+                  "//     var jsonData = pm.response.json();",
+                  "//     pm.expect(jsonData.results.length).to.be.above(0);",
+                  "//     pm.environment.set(\"project_id\", jsonData.results[0].id);",
+                  "// });",
+                  "",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "dbed5f10-4399-4a9b-9884-0633083b4b3e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{access_token}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/api/2/projects/project/{{project_id}}/access"
+          },
+          "response": []
         }
       ],
       "_postman_id": "887e8c03-f108-4258-a5ae-25290c60224b"
@@ -1618,7 +1659,7 @@
   ],
   "variable": [
     {
-      "id": "f2c9cbbe-ddc9-49ce-b7eb-7cd45c7c2047",
+      "id": "105cc5b5-a1c3-4761-84fe-296ad91d732d",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
