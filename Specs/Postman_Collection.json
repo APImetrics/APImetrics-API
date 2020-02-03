@@ -1525,7 +1525,7 @@
           "response": []
         },
         {
-          "name": "[Admin] Get Account Projects by Project ID Copy",
+          "name": "[Admin] Set Project Access",
           "event": [
             {
               "listen": "test",
@@ -1670,7 +1670,7 @@
   ],
   "variable": [
     {
-      "id": "33b1ac54-edc2-4d28-b3bb-a3f58735970f",
+      "id": "21f3cc54-0bde-4871-9dcd-8ab517085af9",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
