@@ -1495,11 +1495,11 @@
                   "    pm.response.to.have.status(200);",
                   "});",
                   "",
-                  "pm.test(\"Has result with ID\", function () {",
-                  "    var jsonData = pm.response.json();",
-                  "    pm.expect(jsonData.results.length).to.be.above(0);",
-                  "    pm.environment.set(\"project_id\", jsonData.results[0].id);",
-                  "});",
+                  "// pm.test(\"Has result with ID\", function () {",
+                  "//     var jsonData = pm.response.json();",
+                  "//     pm.expect(jsonData.results.length).to.be.above(0);",
+                  "//     pm.environment.set(\"project_id\", jsonData.results[0].id);",
+                  "// });",
                   "",
                   ""
                 ],
@@ -1520,7 +1520,7 @@
             },
             "method": "GET",
             "header": [],
-            "url": "{{base_url}}/api/2/account/projects/organization/{{org_id}}/"
+            "url": "{{base_url}}/api/2/projects/project/{{project_id}}/access"
           },
           "response": []
         },
@@ -1618,7 +1618,7 @@
   ],
   "variable": [
     {
-      "id": "58351140-3dc7-4870-a320-3999174dd903",
+      "id": "f2c9cbbe-ddc9-49ce-b7eb-7cd45c7c2047",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
