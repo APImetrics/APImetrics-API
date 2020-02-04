@@ -1679,6 +1679,22 @@
     },
     {
       "name": "[Auth0] Get client_credentials token",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "6754f9ee-e759-42ae-8526-59b77016cb5d",
+            "exec": [
+              "pm.test(\"Save access token\", function () {",
+              "    var jsonData = pm.response.json();",
+              "    pm.environment.set(\"backend_access_token\", jsonData.access_token);",
+              "});",
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
       "_postman_id": "ed038c8b-03a4-476c-b9d5-ea56fa4299c0",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
@@ -1732,7 +1748,7 @@
   ],
   "variable": [
     {
-      "id": "279ea3be-52b0-4543-987e-c389c272e6a6",
+      "id": "795fe211-74e2-4de7-b685-e21f42f3b696",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
