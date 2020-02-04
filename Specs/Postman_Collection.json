@@ -1651,7 +1651,7 @@
             },
             "method": "GET",
             "header": [],
-            "url": "http://localhost:8080/api/2/tokens/"
+            "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}"
           },
           "response": []
         },
@@ -1708,7 +1708,7 @@
   ],
   "variable": [
     {
-      "id": "655484ed-0816-4552-b358-f60d640860d9",
+      "id": "5bd23c56-17c6-47d8-9f42-b941d14b1d52",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
