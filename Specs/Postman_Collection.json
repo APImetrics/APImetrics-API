@@ -1637,44 +1637,6 @@
           "response": []
         },
         {
-          "name": "[Auth0] Get account metadata",
-          "_postman_id": "c52a392b-484e-43b8-9f22-6e8700eab66d",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{backend_access_token}}"
-              }
-            },
-            "method": "GET",
-            "header": [],
-            "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}"
-          },
-          "response": []
-        },
-        {
-          "name": "[Auth0] Get account permissions",
-          "_postman_id": "99c6c10e-26a6-4687-8e4a-cfb905ac9cb2",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{backend_access_token}}"
-              }
-            },
-            "method": "GET",
-            "header": [],
-            "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
-          },
-          "response": []
-        },
-        {
           "name": "[Auth0] Get client_credentials token",
           "event": [
             {
@@ -1713,6 +1675,44 @@
             "url": "https://dev-apimetrics.auth0.com/oauth/token"
           },
           "response": []
+        },
+        {
+          "name": "[Auth0] Get account metadata",
+          "_postman_id": "c52a392b-484e-43b8-9f22-6e8700eab66d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{backend_access_token}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}"
+          },
+          "response": []
+        },
+        {
+          "name": "[Auth0] Get account permissions",
+          "_postman_id": "99c6c10e-26a6-4687-8e4a-cfb905ac9cb2",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{backend_access_token}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
+          },
+          "response": []
         }
       ],
       "_postman_id": "887e8c03-f108-4258-a5ae-25290c60224b"
@@ -1748,7 +1748,7 @@
   ],
   "variable": [
     {
-      "id": "896158be-5d58-4202-be3e-3ef7744dc01e",
+      "id": "8ac64325-566d-43ba-9c12-8ce490cf4ca6",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
