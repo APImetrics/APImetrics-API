@@ -1656,7 +1656,7 @@
           "response": []
         },
         {
-          "name": "Get user metadata Copy",
+          "name": "[Auth0] Get account permissions",
           "_postman_id": "99c6c10e-26a6-4687-8e4a-cfb905ac9cb2",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -1702,7 +1702,7 @@
   ],
   "variable": [
     {
-      "id": "43d0f54d-220f-4765-829b-1198f2331e90",
+      "id": "86fb9ac3-6774-4cb4-8f58-c303ff263161",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
