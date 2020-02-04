@@ -1748,7 +1748,7 @@
             },
             "method": "GET",
             "header": [],
-            "url": "https://dev-apimetrics.auth0.com/api/v2/resource-servers"
+            "url": "https://dev-apimetrics.auth0.com/api/v2/resource-servers/5e1fa8b0f4ea4207a9ea318b"
           },
           "response": []
         },
@@ -1816,7 +1816,7 @@
   ],
   "variable": [
     {
-      "id": "3999eb22-6375-4656-895f-76bda83aa996",
+      "id": "4548fa3c-1b70-4283-a68a-4ed595760044",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
