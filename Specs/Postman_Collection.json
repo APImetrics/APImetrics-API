@@ -1676,6 +1676,19 @@
         }
       ],
       "_postman_id": "887e8c03-f108-4258-a5ae-25290c60224b"
+    },
+    {
+      "name": "[Auth0] Get client_credentials token",
+      "_postman_id": "ed038c8b-03a4-476c-b9d5-ea56fa4299c0",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": ""
+      },
+      "response": []
     }
   ],
   "auth": {
@@ -1708,7 +1721,7 @@
   ],
   "variable": [
     {
-      "id": "6bc6a9fa-c8eb-445f-8c47-46ca973e850d",
+      "id": "e345c161-6370-4240-ab6d-a77834a851d7",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
