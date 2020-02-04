@@ -1830,8 +1830,8 @@
               {
                 "key": "Content-Type",
                 "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
+                "type": "text",
+                "value": "application/json"
               }
             ],
             "body": {
@@ -1876,7 +1876,7 @@
   ],
   "variable": [
     {
-      "id": "249a8d97-8341-486a-bc02-615655e3e45e",
+      "id": "6a57ecaa-8b87-4136-8db0-1597694ac0a2",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
