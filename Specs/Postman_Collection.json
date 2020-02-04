@@ -1811,6 +1811,36 @@
             "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
           },
           "response": []
+        },
+        {
+          "name": "[Auth0] Add account permission Copy",
+          "_postman_id": "87b52e96-1cfb-49de-af2f-6ec0cef65b0f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{backend_access_token}}"
+              }
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"permissions\": [\n\t    {\n    \t    \"resource_server_identifier\": \"https://client.apimetrics.io\",\n        \t\"permission_name\": \"admin\"\n    \t}\n\t]\n}"
+            },
+            "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
+          },
+          "response": []
         }
       ],
       "_postman_id": "887e8c03-f108-4258-a5ae-25290c60224b"
@@ -1846,7 +1876,7 @@
   ],
   "variable": [
     {
-      "id": "4e047a6e-798f-4159-9159-668d6c1ec26d",
+      "id": "c0cb3b77-e878-4878-baf8-90fffd30798c",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
