@@ -1727,8 +1727,19 @@
                 "token": "{{backend_access_token}}"
               }
             },
-            "method": "GET",
-            "header": [],
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"permissions\": [\n\t    {\n    \t    \"resource_server_identifier\": \"https://client.apimetrics.io\",\n        \t\"permission_name\": \"some_permission_name\"\n    \t}\n\t]\n}"
+            },
             "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
           },
           "response": []
@@ -1767,7 +1778,7 @@
   ],
   "variable": [
     {
-      "id": "6a077928-41cf-4f30-bf6d-cfa3ed434382",
+      "id": "2ce87549-85ec-4b8c-8476-89e2f8ac71d1",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
