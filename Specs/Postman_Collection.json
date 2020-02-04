@@ -1643,9 +1643,15 @@
             "disableBodyPruning": true
           },
           "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{backend_access_token}}"
+              }
+            },
             "method": "GET",
             "header": [],
-            "url": ""
+            "url": "http://localhost:8080/api/2/tokens/"
           },
           "response": []
         },
@@ -1696,7 +1702,7 @@
   ],
   "variable": [
     {
-      "id": "b207cecf-0e90-49df-a34a-00afe95c2d7b",
+      "id": "43d0f54d-220f-4765-829b-1198f2331e90",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
