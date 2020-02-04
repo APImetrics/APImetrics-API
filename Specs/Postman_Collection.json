@@ -1664,7 +1664,7 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": ""
+            "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
           },
           "response": []
         }
@@ -1702,7 +1702,7 @@
   ],
   "variable": [
     {
-      "id": "41499100-ed55-4ef7-ab81-873a7e9696a0",
+      "id": "ce7d9706-6a81-4da4-97b1-79058bbff660",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
