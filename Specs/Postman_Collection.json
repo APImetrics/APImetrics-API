@@ -1685,8 +1685,19 @@
       },
       "request": {
         "method": "GET",
-        "header": [],
-        "url": ""
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"grant_type\": \"client_credentials\",\n    \"client_id\": \"CZCqjrGo2Z3rKYAZd3RMKZryRFzjtr51\",\n    \"client_secret\": \"WZoTTWr1hxn-SXPVJlIKffYeoWKm-WVxW8L-fabt_tNvghrW1JCzghX3V_7iO4vI\",\n    \"audience\": \"https://client.apimetrics.io/\"\n}"
+        },
+        "url": "https://dev-apimetrics.auth0.com/oauth/token"
       },
       "response": []
     }
@@ -1721,7 +1732,7 @@
   ],
   "variable": [
     {
-      "id": "0bcbbce5-8f72-45f6-bf72-c3395942e811",
+      "id": "8233846b-3f92-4bf5-9a68-b1f2e85752e4",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
