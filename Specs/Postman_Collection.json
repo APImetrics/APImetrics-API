@@ -1813,7 +1813,7 @@
           "response": []
         },
         {
-          "name": "[Auth0] Add account permission Copy",
+          "name": "[Auth0] Remove account permission",
           "_postman_id": "450dd28d-c668-466c-8e71-859b0e2b5dda",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -1876,7 +1876,7 @@
   ],
   "variable": [
     {
-      "id": "1bb42b08-f7e7-4735-97e1-a0a0e164933c",
+      "id": "249a8d97-8341-486a-bc02-615655e3e45e",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
