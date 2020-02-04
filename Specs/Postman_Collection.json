@@ -1673,49 +1673,49 @@
             "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
           },
           "response": []
+        },
+        {
+          "name": "[Auth0] Get client_credentials token",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "6754f9ee-e759-42ae-8526-59b77016cb5d",
+                "exec": [
+                  "pm.test(\"Save access token\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.environment.set(\"backend_access_token\", jsonData.access_token);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "ed038c8b-03a4-476c-b9d5-ea56fa4299c0",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"grant_type\": \"client_credentials\",\n    \"client_id\": \"CZCqjrGo2Z3rKYAZd3RMKZryRFzjtr51\",\n    \"client_secret\": \"WZoTTWr1hxn-SXPVJlIKffYeoWKm-WVxW8L-fabt_tNvghrW1JCzghX3V_7iO4vI\",\n    \"audience\": \"https://dev-apimetrics.auth0.com/api/v2/\"\n}"
+            },
+            "url": "https://dev-apimetrics.auth0.com/oauth/token"
+          },
+          "response": []
         }
       ],
       "_postman_id": "887e8c03-f108-4258-a5ae-25290c60224b"
-    },
-    {
-      "name": "[Auth0] Get client_credentials token",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "id": "6754f9ee-e759-42ae-8526-59b77016cb5d",
-            "exec": [
-              "pm.test(\"Save access token\", function () {",
-              "    var jsonData = pm.response.json();",
-              "    pm.environment.set(\"backend_access_token\", jsonData.access_token);",
-              "});",
-              ""
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "_postman_id": "ed038c8b-03a4-476c-b9d5-ea56fa4299c0",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "name": "Content-Type",
-            "value": "application/json",
-            "type": "text"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"grant_type\": \"client_credentials\",\n    \"client_id\": \"CZCqjrGo2Z3rKYAZd3RMKZryRFzjtr51\",\n    \"client_secret\": \"WZoTTWr1hxn-SXPVJlIKffYeoWKm-WVxW8L-fabt_tNvghrW1JCzghX3V_7iO4vI\",\n    \"audience\": \"https://dev-apimetrics.auth0.com/api/v2/\"\n}"
-        },
-        "url": "https://dev-apimetrics.auth0.com/oauth/token"
-      },
-      "response": []
     }
   ],
   "auth": {
@@ -1748,7 +1748,7 @@
   ],
   "variable": [
     {
-      "id": "795fe211-74e2-4de7-b685-e21f42f3b696",
+      "id": "896158be-5d58-4202-be3e-3ef7744dc01e",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
