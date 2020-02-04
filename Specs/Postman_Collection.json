@@ -1715,7 +1715,7 @@
           "response": []
         },
         {
-          "name": "[Auth0] Get resource servers",
+          "name": "[Auth0] Get account permissions Copy",
           "_postman_id": "24177470-a193-433a-80c0-cd19c4a24f2e",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -1797,7 +1797,7 @@
   ],
   "variable": [
     {
-      "id": "5748b5ef-4501-49d6-aa23-206b10795b9b",
+      "id": "a956f066-e9da-4253-8396-eafb8ec84836",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
