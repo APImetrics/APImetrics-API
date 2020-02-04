@@ -1520,7 +1520,7 @@
             },
             "method": "GET",
             "header": [],
-            "url": "{{base_url}}/api/2/projects/project/{{project_id}}/access"
+            "url": "{{base_url}}/api/2/projects/project/{{project_id}}/access/"
           },
           "response": []
         },
@@ -1570,7 +1570,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"account_id\": \"auth0|5e34f277ebb7930e73bd4a52\",\n\t\"project_id\": \"agxkZXZ-dmlhdGVzdHNyEQsSBFVzZXIYgICAgMDBugoM\",\n\t\"org_id\": \"apimetrics\",\n\t\"access_level\": \"OWNER\"\n}"
+              "raw": "{\n\t\"account_id\": \"auth0|5e34f277ebb7930e73bd4a52\",\n\t\"access_level\": \"OWNER\"\n}"
             },
             "url": "{{base_url}}/api/2/projects/project/{{project_id}}/access/"
           },
@@ -1708,7 +1708,7 @@
   ],
   "variable": [
     {
-      "id": "5bd23c56-17c6-47d8-9f42-b941d14b1d52",
+      "id": "d7a5769b-f55e-4ea6-95ee-122292cdfea6",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
