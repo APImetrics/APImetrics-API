@@ -1753,6 +1753,25 @@
           "response": []
         },
         {
+          "name": "[Auth0] Get resource server by ID Copy",
+          "_postman_id": "c38401e6-bbd5-4bc8-b332-a587049382d4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{backend_access_token}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "https://dev-apimetrics.auth0.com/api/v2/resource-servers/5e1fa8b0f4ea4207a9ea318b"
+          },
+          "response": []
+        },
+        {
           "name": "[Auth0] Add account permission",
           "_postman_id": "0657437c-a910-40eb-b744-0567690c1012",
           "protocolProfileBehavior": {
@@ -1816,7 +1835,7 @@
   ],
   "variable": [
     {
-      "id": "4548fa3c-1b70-4283-a68a-4ed595760044",
+      "id": "e84bf1a8-2f7b-4de0-a875-fa3907c7197a",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
