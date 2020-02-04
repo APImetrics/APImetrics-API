@@ -1753,7 +1753,7 @@
           "response": []
         },
         {
-          "name": "[Auth0] Get resource server by ID Copy",
+          "name": "[Auth0] Update resource server by ID",
           "_postman_id": "c38401e6-bbd5-4bc8-b332-a587049382d4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -1835,7 +1835,7 @@
   ],
   "variable": [
     {
-      "id": "e84bf1a8-2f7b-4de0-a875-fa3907c7197a",
+      "id": "1aad0454-ab2b-4e75-b470-df472d02965d",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
