@@ -1637,7 +1637,7 @@
           "response": []
         },
         {
-          "name": "[Auth0] Get user metadata",
+          "name": "[Auth0] Get account metadata",
           "_postman_id": "c52a392b-484e-43b8-9f22-6e8700eab66d",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -1702,7 +1702,7 @@
   ],
   "variable": [
     {
-      "id": "86fb9ac3-6774-4cb4-8f58-c303ff263161",
+      "id": "41499100-ed55-4ef7-ab81-873a7e9696a0",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
