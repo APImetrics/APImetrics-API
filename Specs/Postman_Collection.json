@@ -1825,7 +1825,7 @@
                 "token": "{{backend_access_token}}"
               }
             },
-            "method": "POST",
+            "method": "PATCH",
             "header": [
               {
                 "key": "Content-Type",
@@ -1876,7 +1876,7 @@
   ],
   "variable": [
     {
-      "id": "c0cb3b77-e878-4878-baf8-90fffd30798c",
+      "id": "9680e8b2-35d0-4815-b432-eb67441c012f",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
