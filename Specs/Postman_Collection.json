@@ -1635,6 +1635,32 @@
             "url": "{{base_url}}/api/2/account/organization/{{org_id}}/{{account_org_id}}/"
           },
           "response": []
+        },
+        {
+          "name": "Get user metadata",
+          "_postman_id": "c52a392b-484e-43b8-9f22-6e8700eab66d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
+        },
+        {
+          "name": "Get user metadata Copy",
+          "_postman_id": "99c6c10e-26a6-4687-8e4a-cfb905ac9cb2",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
         }
       ],
       "_postman_id": "887e8c03-f108-4258-a5ae-25290c60224b"
@@ -1670,7 +1696,7 @@
   ],
   "variable": [
     {
-      "id": "21f3cc54-0bde-4871-9dcd-8ab517085af9",
+      "id": "4b70d6b8-cb1f-47f2-b2cd-1b6d0f356af8",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
