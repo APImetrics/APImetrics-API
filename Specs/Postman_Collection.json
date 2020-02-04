@@ -1715,6 +1715,25 @@
           "response": []
         },
         {
+          "name": "[Auth0] Get resource servers",
+          "_postman_id": "24177470-a193-433a-80c0-cd19c4a24f2e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{backend_access_token}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "https://dev-apimetrics.auth0.com/api/v2/resource-servers"
+          },
+          "response": []
+        },
+        {
           "name": "[Auth0] Add account permission",
           "_postman_id": "0657437c-a910-40eb-b744-0567690c1012",
           "protocolProfileBehavior": {
@@ -1740,25 +1759,6 @@
               "mode": "raw",
               "raw": "{\n\t\"permissions\": [\n\t    {\n    \t    \"resource_server_identifier\": \"https://client.apimetrics.io\",\n        \t\"permission_name\": \"some_permission_name\"\n    \t}\n\t]\n}"
             },
-            "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
-          },
-          "response": []
-        },
-        {
-          "name": "[Auth0] Get account permissions Copy",
-          "_postman_id": "24177470-a193-433a-80c0-cd19c4a24f2e",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{backend_access_token}}"
-              }
-            },
-            "method": "GET",
-            "header": [],
             "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
           },
           "response": []
@@ -1797,7 +1797,7 @@
   ],
   "variable": [
     {
-      "id": "5b5df472-c5b0-46ed-9826-7864f94da780",
+      "id": "2b30a940-b651-4559-a097-1e1609aac5b8",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
