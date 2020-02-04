@@ -1713,6 +1713,25 @@
             "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
           },
           "response": []
+        },
+        {
+          "name": "[Auth0] Get account permissions Copy",
+          "_postman_id": "0657437c-a910-40eb-b744-0567690c1012",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{backend_access_token}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
+          },
+          "response": []
         }
       ],
       "_postman_id": "887e8c03-f108-4258-a5ae-25290c60224b"
@@ -1748,7 +1767,7 @@
   ],
   "variable": [
     {
-      "id": "f24ad804-98d6-4777-a095-cbbe8892b2c7",
+      "id": "2942acc5-9819-40a0-835b-85c5687a2a39",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
