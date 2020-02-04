@@ -1637,19 +1637,6 @@
           "response": []
         },
         {
-          "name": "Get user metadata",
-          "_postman_id": "c52a392b-484e-43b8-9f22-6e8700eab66d",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": ""
-          },
-          "response": []
-        },
-        {
           "name": "Get user metadata Copy",
           "_postman_id": "99c6c10e-26a6-4687-8e4a-cfb905ac9cb2",
           "protocolProfileBehavior": {
@@ -1696,7 +1683,7 @@
   ],
   "variable": [
     {
-      "id": "4b70d6b8-cb1f-47f2-b2cd-1b6d0f356af8",
+      "id": "ed667ad8-bf86-42d0-85ed-4788d759d86b",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
