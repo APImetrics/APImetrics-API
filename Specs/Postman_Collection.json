@@ -1829,47 +1829,6 @@
           "response": []
         },
         {
-          "name": "[Admin] Get Project By Id",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "b957e9ce-edeb-4833-978a-e585926e677a",
-                "exec": [
-                  "pm.test(\"Status code is 200\", function () {",
-                  "    pm.response.to.have.status(200);",
-                  "});",
-                  "",
-                  "// pm.test(\"Has result with ID\", function () {",
-                  "//     var jsonData = pm.response.json();",
-                  "//     pm.expect(jsonData.results.length).to.be.above(0);",
-                  "//     pm.environment.set(\"project_id\", jsonData.results[0].id);",
-                  "// });",
-                  "",
-                  ""
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "_postman_id": "e750118a-81ce-484a-ba83-5ba34685c997",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{access_token}}"
-              }
-            },
-            "method": "GET",
-            "header": [],
-            "url": "{{base_url}}/api/2/admin/project/{{project_id}}/"
-          },
-          "response": []
-        },
-        {
           "name": "[Admin] Get Project Access By Id",
           "event": [
             {
@@ -1907,6 +1866,47 @@
             "method": "GET",
             "header": [],
             "url": "{{base_url}}/api/2/admin/project/{{project_id}}/access/"
+          },
+          "response": []
+        },
+        {
+          "name": "[Admin] Get Project By Id",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "b957e9ce-edeb-4833-978a-e585926e677a",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "// pm.test(\"Has result with ID\", function () {",
+                  "//     var jsonData = pm.response.json();",
+                  "//     pm.expect(jsonData.results.length).to.be.above(0);",
+                  "//     pm.environment.set(\"project_id\", jsonData.results[0].id);",
+                  "// });",
+                  "",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "e750118a-81ce-484a-ba83-5ba34685c997",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{access_token}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/api/2/admin/project/{{project_id}}/"
           },
           "response": []
         },
@@ -2138,7 +2138,7 @@
   ],
   "variable": [
     {
-      "id": "e78bd6a4-51d2-4d98-ab88-463b24982b6f",
+      "id": "1e66e1da-b7a6-4b58-97b4-693ec26f2d25",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
