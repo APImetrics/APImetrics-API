@@ -1462,74 +1462,6 @@
                 "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}"
               },
               "response": []
-            },
-            {
-              "name": "[Auth0] Get resource servers",
-              "_postman_id": "24177470-a193-433a-80c0-cd19c4a24f2e",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "auth": {
-                  "type": "bearer",
-                  "bearer": {
-                    "token": "{{backend_access_token}}"
-                  }
-                },
-                "method": "GET",
-                "header": [],
-                "url": "https://dev-apimetrics.auth0.com/api/v2/resource-servers"
-              },
-              "response": []
-            },
-            {
-              "name": "[Auth0] Get resource server by ID",
-              "_postman_id": "aa9e8dfc-0c8a-4903-a792-c0ef932cddb4",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "auth": {
-                  "type": "bearer",
-                  "bearer": {
-                    "token": "{{backend_access_token}}"
-                  }
-                },
-                "method": "GET",
-                "header": [],
-                "url": "https://dev-apimetrics.auth0.com/api/v2/resource-servers/5e1fa8b0f4ea4207a9ea318b"
-              },
-              "response": []
-            },
-            {
-              "name": "[Auth0] Update resource server by ID",
-              "_postman_id": "c38401e6-bbd5-4bc8-b332-a587049382d4",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "auth": {
-                  "type": "bearer",
-                  "bearer": {
-                    "token": "{{backend_access_token}}"
-                  }
-                },
-                "method": "PATCH",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n    \"scopes\": [\n        {\n            \"value\": \"admin\",\n            \"description\": \"Organization Admin\"\n        },\n        {\n            \"value\": \"site_admin\",\n            \"description\": \"Site-wide administrator\"\n        },\n        {\n        \t\"value\": \"apimetrics-role-SOME_USERS2\",\n            \"description\": \"User defined role\"\n        }\n    ]\n}"
-                },
-                "url": "https://dev-apimetrics.auth0.com/api/v2/resource-servers/5e1fa8b0f4ea4207a9ea318b"
-              },
-              "response": []
             }
           ],
           "_postman_id": "80ce785a-2f91-445b-8c93-8b641fa6ae0f",
@@ -1857,6 +1789,74 @@
           "response": []
         },
         {
+          "name": "[Auth0] Get resource servers",
+          "_postman_id": "24177470-a193-433a-80c0-cd19c4a24f2e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{backend_access_token}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "https://dev-apimetrics.auth0.com/api/v2/resource-servers"
+          },
+          "response": []
+        },
+        {
+          "name": "[Auth0] Get resource server by ID",
+          "_postman_id": "aa9e8dfc-0c8a-4903-a792-c0ef932cddb4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{backend_access_token}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "https://dev-apimetrics.auth0.com/api/v2/resource-servers/5e1fa8b0f4ea4207a9ea318b"
+          },
+          "response": []
+        },
+        {
+          "name": "[Auth0] Update resource server by ID",
+          "_postman_id": "c38401e6-bbd5-4bc8-b332-a587049382d4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{backend_access_token}}"
+              }
+            },
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"scopes\": [\n        {\n            \"value\": \"admin\",\n            \"description\": \"Organization Admin\"\n        },\n        {\n            \"value\": \"site_admin\",\n            \"description\": \"Site-wide administrator\"\n        },\n        {\n        \t\"value\": \"apimetrics-role-SOME_USERS2\",\n            \"description\": \"User defined role\"\n        }\n    ]\n}"
+            },
+            "url": "https://dev-apimetrics.auth0.com/api/v2/resource-servers/5e1fa8b0f4ea4207a9ea318b"
+          },
+          "response": []
+        },
+        {
           "name": "[Auth0] Get account permissions",
           "_postman_id": "99c6c10e-26a6-4687-8e4a-cfb905ac9cb2",
           "protocolProfileBehavior": {
@@ -1969,7 +1969,7 @@
   ],
   "variable": [
     {
-      "id": "a2b1369b-1519-4768-b84f-4f13518b9441",
+      "id": "0c6db9ee-ab0a-4865-a1cf-129e66ca803e",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
