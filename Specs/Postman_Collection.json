@@ -2040,7 +2040,7 @@
               "mode": "raw",
               "raw": "{\n\t\"account_id\": \"auth0|5e34f277ebb7930e73bd4a52\",\n\t\"access_level\": \"OWNER\"\n}"
             },
-            "url": "{{base_url}}/api/2/projects/project/{{project_id}}/access/"
+            "url": "{{base_url}}/api/2/admin/project/{{project_id}}/access/"
           },
           "response": []
         },
@@ -2138,7 +2138,7 @@
   ],
   "variable": [
     {
-      "id": "7fb83c1e-a2c8-45bf-9f22-f4d7df2793c0",
+      "id": "e409fb6f-c40f-4635-be89-0a1b4ce07865",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
