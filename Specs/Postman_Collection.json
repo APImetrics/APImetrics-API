@@ -1906,7 +1906,7 @@
             },
             "method": "GET",
             "header": [],
-            "url": "{{base_url}}/api/2/admin/project/{{project_id}}/"
+            "url": "{{base_url}}/api/2/admin/project/{{project_id}}/access/"
           },
           "response": []
         },
@@ -2138,7 +2138,7 @@
   ],
   "variable": [
     {
-      "id": "1b67ed3c-ccda-4295-bf72-1471751b0ac7",
+      "id": "c35dcbb4-3298-40c3-8ccf-1127b06c0a76",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
