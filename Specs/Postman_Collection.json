@@ -1829,7 +1829,7 @@
           "response": []
         },
         {
-          "name": "[Admin] Get Project",
+          "name": "[Admin] Get Project By Id",
           "event": [
             {
               "listen": "test",
@@ -1865,7 +1865,7 @@
             },
             "method": "GET",
             "header": [],
-            "url": "{{base_url}}/api/2/admin/organization/projects/"
+            "url": "{{base_url}}/api/2/admin/project/"
           },
           "response": []
         },
@@ -2097,7 +2097,7 @@
   ],
   "variable": [
     {
-      "id": "d0caa875-8c14-4e30-ad96-44e8438cde80",
+      "id": "cd044d6c-5649-4411-b6b9-14d1e386170d",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
