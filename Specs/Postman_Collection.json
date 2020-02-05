@@ -1947,7 +1947,7 @@
             },
             "method": "GET",
             "header": [],
-            "url": "{{base_url}}/api/2/projects/roles"
+            "url": "{{base_url}}/api/2/admin/roles"
           },
           "response": []
         },
@@ -2138,7 +2138,7 @@
   ],
   "variable": [
     {
-      "id": "6035eadf-3c0e-4dea-a26c-73663e7e2b78",
+      "id": "e78bd6a4-51d2-4d98-ab88-463b24982b6f",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
