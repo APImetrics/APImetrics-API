@@ -1911,7 +1911,7 @@
           "response": []
         },
         {
-          "name": "[TBA] [Admin] Get Project By Id",
+          "name": "[Admin] Get Project By Id",
           "event": [
             {
               "listen": "test",
@@ -2179,7 +2179,7 @@
   ],
   "variable": [
     {
-      "id": "10485618-94a2-49e6-b2dc-730c92d755f0",
+      "id": "54fc352d-a8f3-4cb7-8984-aedb6c83f1b5",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
