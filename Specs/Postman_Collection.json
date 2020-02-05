@@ -1977,7 +1977,7 @@
                   "pm.test(\"Has result with ID\", function () {",
                   "    var jsonData = pm.response.json();",
                   "    pm.expect(jsonData.results.length).to.be.above(0);",
-                  "    pm.environment.set(\"project_access_id\", jsonData.results[0].id);",
+                  "    pm.environment.set(\"project_role_id\", jsonData.results[0].id);",
                   "});",
                   "",
                   ""
@@ -2190,7 +2190,7 @@
   ],
   "variable": [
     {
-      "id": "eb9968da-40a3-4d80-9b0f-53bb0cb4b068",
+      "id": "f141825b-5b47-4a12-936f-fe94af556fe4",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
