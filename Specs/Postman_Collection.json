@@ -1402,12 +1402,6 @@
       "name": "Account APIs",
       "item": [
         {
-          "name": "Auth0 APIs",
-          "item": [],
-          "_postman_id": "80ce785a-2f91-445b-8c93-8b641fa6ae0f",
-          "_postman_isSubFolder": true
-        },
-        {
           "name": "Get Account Projects",
           "event": [
             {
@@ -1968,7 +1962,7 @@
   ],
   "variable": [
     {
-      "id": "1d79f73b-e3ca-4e17-a506-357ef2d49e28",
+      "id": "69c4408f-9890-4516-8cfd-da2c4b68f410",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
