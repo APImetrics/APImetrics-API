@@ -2011,47 +2011,6 @@
           "response": []
         },
         {
-          "name": "[Admin] Get Roles in Org",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "b957e9ce-edeb-4833-978a-e585926e677a",
-                "exec": [
-                  "pm.test(\"Status code is 200\", function () {",
-                  "    pm.response.to.have.status(200);",
-                  "});",
-                  "",
-                  "// pm.test(\"Has result with ID\", function () {",
-                  "//     var jsonData = pm.response.json();",
-                  "//     pm.expect(jsonData.results.length).to.be.above(0);",
-                  "//     pm.environment.set(\"project_id\", jsonData.results[0].id);",
-                  "// });",
-                  "",
-                  ""
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "_postman_id": "c2cd69be-c6e7-49cc-8064-05f463b43446",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{access_token}}"
-              }
-            },
-            "method": "GET",
-            "header": [],
-            "url": "{{base_url}}/api/2/admin/organization/roles"
-          },
-          "response": []
-        },
-        {
           "name": "[Admin] Get Roles By Project Id Copy",
           "event": [
             {
@@ -2089,6 +2048,47 @@
             "method": "GET",
             "header": [],
             "url": "{{base_url}}/api/2/admin/project/{{project_id}}/roles"
+          },
+          "response": []
+        },
+        {
+          "name": "[Admin] Get Roles in Org",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "b957e9ce-edeb-4833-978a-e585926e677a",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "// pm.test(\"Has result with ID\", function () {",
+                  "//     var jsonData = pm.response.json();",
+                  "//     pm.expect(jsonData.results.length).to.be.above(0);",
+                  "//     pm.environment.set(\"project_id\", jsonData.results[0].id);",
+                  "// });",
+                  "",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "c2cd69be-c6e7-49cc-8064-05f463b43446",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{access_token}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/api/2/admin/organization/roles"
           },
           "response": []
         },
@@ -2227,7 +2227,7 @@
   ],
   "variable": [
     {
-      "id": "8f2c5300-062d-4120-898c-3eeeb8516d4f",
+      "id": "829b0c0e-0361-4922-b15a-fe28f23d902d",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
