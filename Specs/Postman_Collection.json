@@ -1477,7 +1477,7 @@
             },
             "method": "GET",
             "header": [],
-            "url": "{{base_url}}/api/2/projects/"
+            "url": "{{base_url}}/api/2/quota/"
           },
           "response": []
         },
@@ -1956,7 +1956,7 @@
   ],
   "variable": [
     {
-      "id": "457a8047-99aa-49fc-b5f3-e4fed6fd7b2b",
+      "id": "b6a58578-5887-4bd5-b978-25f0dfd1e532",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
