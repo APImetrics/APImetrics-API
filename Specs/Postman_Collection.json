@@ -1530,6 +1530,85 @@
                 "url": "https://dev-apimetrics.auth0.com/api/v2/resource-servers/5e1fa8b0f4ea4207a9ea318b"
               },
               "response": []
+            },
+            {
+              "name": "[Auth0] Get account permissions",
+              "_postman_id": "99c6c10e-26a6-4687-8e4a-cfb905ac9cb2",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{backend_access_token}}"
+                  }
+                },
+                "method": "GET",
+                "header": [],
+                "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
+              },
+              "response": []
+            },
+            {
+              "name": "[Auth0] Add account permission",
+              "_postman_id": "0657437c-a910-40eb-b744-0567690c1012",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{backend_access_token}}"
+                  }
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n\t\"permissions\": [\n\t    {\n    \t    \"resource_server_identifier\": \"https://client.apimetrics.io\",\n        \t\"permission_name\": \"apimetrics-role-SOME_USERS2\"\n    \t}\n\t]\n}"
+                },
+                "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
+              },
+              "response": []
+            },
+            {
+              "name": "[Auth0] Remove account permission",
+              "_postman_id": "450dd28d-c668-466c-8e71-859b0e2b5dda",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{backend_access_token}}"
+                  }
+                },
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n\t\"permissions\": [\n\t    {\n    \t    \"resource_server_identifier\": \"https://client.apimetrics.io\",\n        \t\"permission_name\": \"apimetrics-role-SOME_USERS2\"\n    \t}\n\t]\n}"
+                },
+                "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
+              },
+              "response": []
             }
           ],
           "_postman_id": "80ce785a-2f91-445b-8c93-8b641fa6ae0f",
@@ -1855,85 +1934,6 @@
             "url": "{{base_url}}/api/2/account/organization/{{org_id}}/{{account_org_id}}/"
           },
           "response": []
-        },
-        {
-          "name": "[Auth0] Get account permissions",
-          "_postman_id": "99c6c10e-26a6-4687-8e4a-cfb905ac9cb2",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{backend_access_token}}"
-              }
-            },
-            "method": "GET",
-            "header": [],
-            "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
-          },
-          "response": []
-        },
-        {
-          "name": "[Auth0] Add account permission",
-          "_postman_id": "0657437c-a910-40eb-b744-0567690c1012",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{backend_access_token}}"
-              }
-            },
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n\t\"permissions\": [\n\t    {\n    \t    \"resource_server_identifier\": \"https://client.apimetrics.io\",\n        \t\"permission_name\": \"apimetrics-role-SOME_USERS2\"\n    \t}\n\t]\n}"
-            },
-            "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
-          },
-          "response": []
-        },
-        {
-          "name": "[Auth0] Remove account permission",
-          "_postman_id": "450dd28d-c668-466c-8e71-859b0e2b5dda",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{backend_access_token}}"
-              }
-            },
-            "method": "DELETE",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "type": "text",
-                "value": "application/json"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n\t\"permissions\": [\n\t    {\n    \t    \"resource_server_identifier\": \"https://client.apimetrics.io\",\n        \t\"permission_name\": \"apimetrics-role-SOME_USERS2\"\n    \t}\n\t]\n}"
-            },
-            "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
-          },
-          "response": []
         }
       ],
       "_postman_id": "887e8c03-f108-4258-a5ae-25290c60224b"
@@ -1969,7 +1969,7 @@
   ],
   "variable": [
     {
-      "id": "9e2407db-5f30-4843-8ba4-ac713fc99ef1",
+      "id": "fd775ee1-25e0-450d-bc14-462d4d990bc0",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
