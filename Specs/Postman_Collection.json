@@ -1442,7 +1442,7 @@
           "response": []
         },
         {
-          "name": "Get Account Projects Copy",
+          "name": "Get Account Project Quta",
           "event": [
             {
               "listen": "test",
@@ -1956,7 +1956,7 @@
   ],
   "variable": [
     {
-      "id": "fc158fd6-d7d5-457c-b2ce-34af3dd78792",
+      "id": "3fc0e09f-8f86-46ba-b4aa-5a40aaaf7717",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
