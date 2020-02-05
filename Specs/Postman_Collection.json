@@ -1530,25 +1530,6 @@
                 "url": "https://dev-apimetrics.auth0.com/api/v2/resource-servers/5e1fa8b0f4ea4207a9ea318b"
               },
               "response": []
-            },
-            {
-              "name": "[Auth0] Get account permissions",
-              "_postman_id": "99c6c10e-26a6-4687-8e4a-cfb905ac9cb2",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "auth": {
-                  "type": "bearer",
-                  "bearer": {
-                    "token": "{{backend_access_token}}"
-                  }
-                },
-                "method": "GET",
-                "header": [],
-                "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
-              },
-              "response": []
             }
           ],
           "_postman_id": "80ce785a-2f91-445b-8c93-8b641fa6ae0f",
@@ -1876,6 +1857,25 @@
           "response": []
         },
         {
+          "name": "[Auth0] Get account permissions",
+          "_postman_id": "99c6c10e-26a6-4687-8e4a-cfb905ac9cb2",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{backend_access_token}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
+          },
+          "response": []
+        },
+        {
           "name": "[Auth0] Add account permission",
           "_postman_id": "0657437c-a910-40eb-b744-0567690c1012",
           "protocolProfileBehavior": {
@@ -1969,7 +1969,7 @@
   ],
   "variable": [
     {
-      "id": "0b34c1ad-e2e4-44f9-8dce-7d85f2543279",
+      "id": "9e2407db-5f30-4843-8ba4-ac713fc99ef1",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
