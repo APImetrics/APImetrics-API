@@ -1787,6 +1787,48 @@
           "response": []
         },
         {
+          "name": "[Admin] Get Account in Org By Id",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "b957e9ce-edeb-4833-978a-e585926e677a",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test(\"Has result with ID\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.results.length).to.be.above(0);",
+                  "    pm.environment.set(\"org_account_id\", jsonData.results[0].org_account_id);",
+                  "    pm.environment.set(\"account_id\", jsonData.results[0].account_id);",
+                  "});",
+                  "",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "7f1b2334-7239-4de1-b915-1de193a0c197",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{access_token}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/api/2/admin/organization/accounts/"
+          },
+          "response": []
+        },
+        {
           "name": "[Admin] Get Roles in Org",
           "event": [
             {
@@ -1979,48 +2021,6 @@
             "url": "{{base_url}}/api/2/account/organization/{{org_id}}/{{account_org_id}}/"
           },
           "response": []
-        },
-        {
-          "name": "[Admin] Get Accounts in Org Copy",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "b957e9ce-edeb-4833-978a-e585926e677a",
-                "exec": [
-                  "pm.test(\"Status code is 200\", function () {",
-                  "    pm.response.to.have.status(200);",
-                  "});",
-                  "",
-                  "pm.test(\"Has result with ID\", function () {",
-                  "    var jsonData = pm.response.json();",
-                  "    pm.expect(jsonData.results.length).to.be.above(0);",
-                  "    pm.environment.set(\"org_account_id\", jsonData.results[0].org_account_id);",
-                  "    pm.environment.set(\"account_id\", jsonData.results[0].account_id);",
-                  "});",
-                  "",
-                  ""
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "_postman_id": "7f1b2334-7239-4de1-b915-1de193a0c197",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{access_token}}"
-              }
-            },
-            "method": "GET",
-            "header": [],
-            "url": "{{base_url}}/api/2/admin/organization/accounts/"
-          },
-          "response": []
         }
       ],
       "_postman_id": "887e8c03-f108-4258-a5ae-25290c60224b"
@@ -2056,7 +2056,7 @@
   ],
   "variable": [
     {
-      "id": "408b8bf9-789f-4aa4-9d94-562e78f61b38",
+      "id": "a717df0a-11f0-48cf-8d4b-85b1971d5791",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
