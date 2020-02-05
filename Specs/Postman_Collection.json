@@ -1920,7 +1920,7 @@
           "response": []
         },
         {
-          "name": "[Admin] Get Role By Id Copy",
+          "name": "[Admin] Get Access By Id",
           "event": [
             {
               "listen": "test",
@@ -2309,7 +2309,7 @@
   ],
   "variable": [
     {
-      "id": "9beffefc-98c2-4209-9a62-0e828567358c",
+      "id": "32843af5-ff5c-4e62-8003-a55a7cd92940",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
