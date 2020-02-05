@@ -1418,7 +1418,6 @@
                   "    pm.expect(jsonData.results.length).to.be.above(0);",
                   "    pm.environment.set(\"account_project_id\", jsonData.results[0].id);",
                   "});",
-                  "",
                   ""
                 ],
                 "type": "text/javascript"
@@ -1917,7 +1916,7 @@
   ],
   "variable": [
     {
-      "id": "b53df030-565d-4f66-a9f1-a76742f7d213",
+      "id": "faee0d96-5f1a-4513-baf2-2fd72cc6ba79",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
