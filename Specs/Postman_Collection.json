@@ -1961,7 +1961,7 @@
           "response": []
         },
         {
-          "name": "[Admin] Get Access By Id Copy",
+          "name": "[Admin] Delete Access By Id",
           "event": [
             {
               "listen": "test",
@@ -2350,7 +2350,7 @@
   ],
   "variable": [
     {
-      "id": "e97b0442-14ee-45a2-b123-de4d020de213",
+      "id": "1dc1331b-35a0-4a32-b988-9798d5352ec0",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
