@@ -2086,7 +2086,7 @@
                 "token": "{{access_token}}"
               }
             },
-            "method": "GET",
+            "method": "DELETE",
             "header": [],
             "url": "{{base_url}}/api/2/admin/roles/{{project_role_id}}/"
           },
@@ -2268,7 +2268,7 @@
   ],
   "variable": [
     {
-      "id": "f4889688-1313-4c5e-a1ec-ae213209e414",
+      "id": "e16c1b86-7a2e-4997-96fd-e115cd343e19",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
