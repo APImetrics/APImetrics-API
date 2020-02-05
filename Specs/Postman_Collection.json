@@ -2004,11 +2004,11 @@
                   "    pm.response.to.have.status(200);",
                   "});",
                   "",
-                  "// pm.test(\"Has result with ID\", function () {",
-                  "//     var jsonData = pm.response.json();",
-                  "//     pm.expect(jsonData.results.length).to.be.above(0);",
-                  "//     pm.environment.set(\"project_id\", jsonData.results[0].id);",
-                  "// });",
+                  "pm.test(\"Has result with ID\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.results.length).to.be.above(0);",
+                  "    pm.environment.set(\"project_access_id\", jsonData.results[0].id);",
+                  "});",
                   "",
                   ""
                 ],
@@ -2038,9 +2038,9 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"account_id\": \"auth0|5e34f277ebb7930e73bd4a52\",\n\t\"access_level\": \"OWNER\"\n}"
+              "raw": "{\n\t\"account_id\": \"auth0|5e34f277ebb7930e73bd4a52\",\n\t\"access_level\": \"EDITOR\"\n}"
             },
-            "url": "{{base_url}}/api/2/admin/project/{{project_id}}/access/"
+            "url": "{{base_url}}/api/2/admin/project/{{project_id}}/access"
           },
           "response": []
         },
@@ -2138,7 +2138,7 @@
   ],
   "variable": [
     {
-      "id": "e409fb6f-c40f-4635-be89-0a1b4ce07865",
+      "id": "ca52ba9b-7ac5-4c74-92e4-76d2f6a8c24a",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
