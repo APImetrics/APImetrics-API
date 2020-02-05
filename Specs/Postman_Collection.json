@@ -1829,7 +1829,7 @@
           "response": []
         },
         {
-          "name": "[Admin] Get Projects in Org Copy",
+          "name": "[Admin] Get Project",
           "event": [
             {
               "listen": "test",
@@ -2097,7 +2097,7 @@
   ],
   "variable": [
     {
-      "id": "d5012a5e-573d-4418-a066-86812c2cb6e8",
+      "id": "d0caa875-8c14-4e30-ad96-44e8438cde80",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
