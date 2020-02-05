@@ -1870,7 +1870,7 @@
           "response": []
         },
         {
-          "name": "[Admin] Set Project Access",
+          "name": "[Admin] Assign Access to Project",
           "event": [
             {
               "listen": "test",
@@ -2268,7 +2268,7 @@
   ],
   "variable": [
     {
-      "id": "e16c1b86-7a2e-4997-96fd-e115cd343e19",
+      "id": "63fc37c4-019c-4c00-bc77-90bbf6f21409",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
