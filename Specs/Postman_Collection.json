@@ -1963,6 +1963,58 @@
           "response": []
         },
         {
+          "name": "[Admin] Set Project Access Copy",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "b957e9ce-edeb-4833-978a-e585926e677a",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test(\"Has result with ID\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.results.length).to.be.above(0);",
+                  "    pm.environment.set(\"project_access_id\", jsonData.results[0].id);",
+                  "});",
+                  "",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "da9e04c6-62ca-4540-99eb-5e70c184fe29",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{access_token}}"
+              }
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"account_id\": \"auth0|5e34f277ebb7930e73bd4a52\",\n\t\"access_level\": \"EDITOR\"\n}"
+            },
+            "url": "{{base_url}}/api/2/admin/project/{{project_id}}/access"
+          },
+          "response": []
+        },
+        {
           "name": "[Admin] Get Roles in Org",
           "event": [
             {
@@ -2138,7 +2190,7 @@
   ],
   "variable": [
     {
-      "id": "1b9d032a-4e50-4f80-aebc-35c794959839",
+      "id": "1ebb3bfd-6448-4ae5-83a7-e6ed7a718aa6",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
