@@ -2293,7 +2293,7 @@
             },
             "method": "GET",
             "header": [],
-            "url": "{{base_url}}/api/2/account/organization/{{org_id}}/"
+            "url": "{{base_url}}/api/2/organization/{{org_id}}/"
           },
           "response": []
         },
@@ -2350,7 +2350,7 @@
   ],
   "variable": [
     {
-      "id": "1dc1331b-35a0-4a32-b988-9798d5352ec0",
+      "id": "ce87838f-6fae-48e5-a482-4b3fb2c64ebc",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
