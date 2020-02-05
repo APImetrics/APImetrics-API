@@ -2052,6 +2052,47 @@
           "response": []
         },
         {
+          "name": "[Admin] Get Role By Id Copy",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "b957e9ce-edeb-4833-978a-e585926e677a",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "// pm.test(\"Has result with ID\", function () {",
+                  "//     var jsonData = pm.response.json();",
+                  "//     pm.expect(jsonData.results.length).to.be.above(0);",
+                  "//     pm.environment.set(\"project_id\", jsonData.results[0].id);",
+                  "// });",
+                  "",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "0c6d398b-5cd3-49ea-9a12-4afb4a96612d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{access_token}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/api/2/admin/roles/{{project_role_id}}/"
+          },
+          "response": []
+        },
+        {
           "name": "[Admin] Delete Role By Id",
           "event": [
             {
@@ -2268,7 +2309,7 @@
   ],
   "variable": [
     {
-      "id": "7c851e48-60ad-4761-a300-22d5ca88fa1f",
+      "id": "5b5f18cb-79dc-4424-ac8e-32888e1a4ca3",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
