@@ -1476,8 +1476,15 @@
               }
             },
             "method": "GET",
-            "header": [],
-            "url": "{{base_url}}/api/2/quota/"
+            "header": [
+              {
+                "key": "Apimetrics-Project-Id",
+                "value": "{{project_id}}",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": "{{base_url}}/api/2/projects/quota"
           },
           "response": []
         },
@@ -1956,7 +1963,7 @@
   ],
   "variable": [
     {
-      "id": "b6a58578-5887-4bd5-b978-25f0dfd1e532",
+      "id": "8bd2df5e-e498-420b-9757-ed631073276a",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
