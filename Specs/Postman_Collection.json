@@ -1480,8 +1480,7 @@
               {
                 "key": "Apimetrics-Project-Id",
                 "value": "{{project_id}}",
-                "type": "text",
-                "disabled": true
+                "type": "text"
               }
             ],
             "url": "{{base_url}}/api/2/account/quota"
@@ -1566,7 +1565,7 @@
             },
             "method": "GET",
             "header": [],
-            "url": "{{base_url}}/api/2/projects/organization/{{org_id}}/roles"
+            "url": "{{base_url}}/api/2/projects/roles"
           },
           "response": []
         },
@@ -1963,7 +1962,7 @@
   ],
   "variable": [
     {
-      "id": "fef49c84-2ffa-4889-a6fc-e2cb7139b934",
+      "id": "bfe845d9-5c6f-4163-90f2-d889953e23ce",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
