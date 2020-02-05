@@ -2257,47 +2257,6 @@
           "response": []
         },
         {
-          "name": "[Admin] Get Org Accounts",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "b957e9ce-edeb-4833-978a-e585926e677a",
-                "exec": [
-                  "pm.test(\"Status code is 200\", function () {",
-                  "    pm.response.to.have.status(200);",
-                  "});",
-                  "",
-                  "pm.test(\"Has result with ID\", function () {",
-                  "    var jsonData = pm.response.json();",
-                  "    pm.expect(jsonData.results.length).to.be.above(0);",
-                  "    pm.environment.set(\"account_org_id\", jsonData.results[0].id);",
-                  "});",
-                  "",
-                  ""
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "_postman_id": "c6f537d1-beb6-4c26-9f05-613944516246",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{access_token}}"
-              }
-            },
-            "method": "GET",
-            "header": [],
-            "url": "{{base_url}}/api/2/organization/{{org_id}}/"
-          },
-          "response": []
-        },
-        {
           "name": "[Admin] Get Org Account by ID",
           "_postman_id": "a5a8ec69-c6b0-46a0-b815-c2cf22ac78ab",
           "protocolProfileBehavior": {
@@ -2350,7 +2309,7 @@
   ],
   "variable": [
     {
-      "id": "ce87838f-6fae-48e5-a482-4b3fb2c64ebc",
+      "id": "e44a704b-b50d-4f79-b6e7-a9b985da8cbe",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
