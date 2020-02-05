@@ -1995,7 +1995,7 @@
                 "token": "{{access_token}}"
               }
             },
-            "method": "GET",
+            "method": "DELETE",
             "header": [],
             "url": "{{base_url}}/api/2/admin/access/{{project_access_id}}/"
           },
@@ -2290,7 +2290,7 @@
   ],
   "variable": [
     {
-      "id": "f12e3c94-de4c-46d1-a555-e3e9c28111af",
+      "id": "3c1df735-d596-481e-813d-92874fe40b9f",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
