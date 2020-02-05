@@ -1979,7 +1979,6 @@
                   "    pm.expect(jsonData.results.length).to.be.above(0);",
                   "    pm.environment.set(\"project_role_id\", jsonData.results[0].id);",
                   "});",
-                  "",
                   ""
                 ],
                 "type": "text/javascript"
@@ -2190,7 +2189,7 @@
   ],
   "variable": [
     {
-      "id": "f141825b-5b47-4a12-936f-fe94af556fe4",
+      "id": "8d82fa50-c197-4639-8ca0-bbc8735fb7a8",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
