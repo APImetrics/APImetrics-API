@@ -1958,12 +1958,12 @@
             },
             "method": "GET",
             "header": [],
-            "url": "{{base_url}}/api/2/admin/project/{{project_id}}/access"
+            "url": "{{base_url}}/api/2/admin/project/{{project_id}}/roles"
           },
           "response": []
         },
         {
-          "name": "[Admin] Set Project Access Copy",
+          "name": "[Admin] Assign Role to Project",
           "event": [
             {
               "listen": "test",
@@ -2002,13 +2002,13 @@
               {
                 "key": "Content-Type",
                 "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
+                "type": "text",
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"account_id\": \"auth0|5e34f277ebb7930e73bd4a52\",\n\t\"access_level\": \"EDITOR\"\n}"
+              "raw": "{\n\t\"role_id\": \"SOME_ROLE_OR_OTHER\",\n\t\"access_level\": \"EDITOR\"\n}"
             },
             "url": "{{base_url}}/api/2/admin/project/{{project_id}}/access"
           },
@@ -2190,7 +2190,7 @@
   ],
   "variable": [
     {
-      "id": "1ebb3bfd-6448-4ae5-83a7-e6ed7a718aa6",
+      "id": "def04581-7f85-4c60-8697-9b2c6f7c85ec",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
