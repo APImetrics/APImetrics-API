@@ -1402,6 +1402,53 @@
       "name": "Account APIs",
       "item": [
         {
+          "name": "Auth0 APIs",
+          "item": [
+            {
+              "name": "[Auth0] Get client_credentials token",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "6754f9ee-e759-42ae-8526-59b77016cb5d",
+                    "exec": [
+                      "pm.test(\"Save access token\", function () {",
+                      "    var jsonData = pm.response.json();",
+                      "    pm.environment.set(\"backend_access_token\", jsonData.access_token);",
+                      "});",
+                      ""
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
+              "_postman_id": "ed038c8b-03a4-476c-b9d5-ea56fa4299c0",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"grant_type\": \"client_credentials\",\n    \"client_id\": \"CZCqjrGo2Z3rKYAZd3RMKZryRFzjtr51\",\n    \"client_secret\": \"WZoTTWr1hxn-SXPVJlIKffYeoWKm-WVxW8L-fabt_tNvghrW1JCzghX3V_7iO4vI\",\n    \"audience\": \"https://dev-apimetrics.auth0.com/api/v2/\"\n}"
+                },
+                "url": "https://dev-apimetrics.auth0.com/oauth/token"
+              },
+              "response": []
+            }
+          ],
+          "_postman_id": "80ce785a-2f91-445b-8c93-8b641fa6ae0f",
+          "_postman_isSubFolder": true
+        },
+        {
           "name": "Get Account Projects",
           "event": [
             {
@@ -1565,7 +1612,7 @@
             },
             "method": "GET",
             "header": [],
-            "url": "{{base_url}}/api/2/projects/organization/{{org_id}}/roles"
+            "url": "{{base_url}}/api/2/projects/roles"
           },
           "response": []
         },
@@ -1723,46 +1770,6 @@
           "response": []
         },
         {
-          "name": "[Auth0] Get client_credentials token",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "6754f9ee-e759-42ae-8526-59b77016cb5d",
-                "exec": [
-                  "pm.test(\"Save access token\", function () {",
-                  "    var jsonData = pm.response.json();",
-                  "    pm.environment.set(\"backend_access_token\", jsonData.access_token);",
-                  "});",
-                  ""
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "_postman_id": "ed038c8b-03a4-476c-b9d5-ea56fa4299c0",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"grant_type\": \"client_credentials\",\n    \"client_id\": \"CZCqjrGo2Z3rKYAZd3RMKZryRFzjtr51\",\n    \"client_secret\": \"WZoTTWr1hxn-SXPVJlIKffYeoWKm-WVxW8L-fabt_tNvghrW1JCzghX3V_7iO4vI\",\n    \"audience\": \"https://dev-apimetrics.auth0.com/api/v2/\"\n}"
-            },
-            "url": "https://dev-apimetrics.auth0.com/oauth/token"
-          },
-          "response": []
-        },
-        {
           "name": "[Auth0] Get account metadata",
           "_postman_id": "c52a392b-484e-43b8-9f22-6e8700eab66d",
           "protocolProfileBehavior": {
@@ -1843,7 +1850,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"scopes\": [\n        {\n            \"value\": \"admin\",\n            \"description\": \"Organization Admin\"\n        },\n        {\n            \"value\": \"site_admin\",\n            \"description\": \"Site-wide administrator\"\n        },\n        {\n        \t\"value\": \"apimetrics-role-SOME_USERS\",\n            \"description\": \"User defined role\"\n        }\n    ]\n}"
+              "raw": "{\n    \"scopes\": [\n        {\n            \"value\": \"admin\",\n            \"description\": \"Organization Admin\"\n        },\n        {\n            \"value\": \"site_admin\",\n            \"description\": \"Site-wide administrator\"\n        },\n        {\n        \t\"value\": \"apimetrics-role-SOME_USERS2\",\n            \"description\": \"User defined role\"\n        }\n    ]\n}"
             },
             "url": "https://dev-apimetrics.auth0.com/api/v2/resource-servers/5e1fa8b0f4ea4207a9ea318b"
           },
@@ -1962,7 +1969,7 @@
   ],
   "variable": [
     {
-      "id": "d91cf704-e328-468e-916c-081ef25b7869",
+      "id": "4371d32f-1ffb-458a-a833-469a977225e9",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
