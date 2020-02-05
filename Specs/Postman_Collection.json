@@ -2002,13 +2002,13 @@
               {
                 "key": "Content-Type",
                 "name": "Content-Type",
-                "type": "text",
-                "value": "application/json"
+                "value": "application/json",
+                "type": "text"
               }
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"role_id\": \"SOME_ROLE_OR_OTHER\",\n\t\"access_level\": \"EDITOR\"\n}"
+              "raw": "{\n\t\"account_id\": \"auth0|5e34f277ebb7930e73bd4a52\",\n\t\"access_level\": \"EDITOR\"\n}"
             },
             "url": "{{base_url}}/api/2/admin/project/{{project_id}}/access"
           },
@@ -2190,7 +2190,7 @@
   ],
   "variable": [
     {
-      "id": "e0fc0dd0-e7b5-490a-8b8a-bbf185be3448",
+      "id": "6451c854-82cd-4c45-8b79-8ad34deff9e7",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
