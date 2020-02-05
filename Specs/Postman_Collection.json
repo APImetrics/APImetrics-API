@@ -1481,6 +1481,25 @@
                 "url": "https://dev-apimetrics.auth0.com/api/v2/resource-servers"
               },
               "response": []
+            },
+            {
+              "name": "[Auth0] Get resource server by ID",
+              "_postman_id": "aa9e8dfc-0c8a-4903-a792-c0ef932cddb4",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{backend_access_token}}"
+                  }
+                },
+                "method": "GET",
+                "header": [],
+                "url": "https://dev-apimetrics.auth0.com/api/v2/resource-servers/5e1fa8b0f4ea4207a9ea318b"
+              },
+              "response": []
             }
           ],
           "_postman_id": "80ce785a-2f91-445b-8c93-8b641fa6ae0f",
@@ -1808,25 +1827,6 @@
           "response": []
         },
         {
-          "name": "[Auth0] Get resource server by ID",
-          "_postman_id": "aa9e8dfc-0c8a-4903-a792-c0ef932cddb4",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{backend_access_token}}"
-              }
-            },
-            "method": "GET",
-            "header": [],
-            "url": "https://dev-apimetrics.auth0.com/api/v2/resource-servers/5e1fa8b0f4ea4207a9ea318b"
-          },
-          "response": []
-        },
-        {
           "name": "[Auth0] Update resource server by ID",
           "_postman_id": "c38401e6-bbd5-4bc8-b332-a587049382d4",
           "protocolProfileBehavior": {
@@ -1969,7 +1969,7 @@
   ],
   "variable": [
     {
-      "id": "65ea7dba-f8b4-4fd8-a129-b7a392fd443c",
+      "id": "d5e10ff7-5cec-487a-ad0b-0fad9e047a94",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
