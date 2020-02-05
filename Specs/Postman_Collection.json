@@ -2052,7 +2052,7 @@
           "response": []
         },
         {
-          "name": "[Admin] Get Role By Id Copy",
+          "name": "[Admin] Delete Role By Id",
           "event": [
             {
               "listen": "test",
@@ -2268,7 +2268,7 @@
   ],
   "variable": [
     {
-      "id": "38755369-6fa6-4c19-aa1f-f7f2fe367923",
+      "id": "f4889688-1313-4c5e-a1ec-ae213209e414",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
