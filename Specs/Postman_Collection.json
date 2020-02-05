@@ -1745,7 +1745,7 @@
           "response": []
         },
         {
-          "name": "[Admin] Get Projects in Org Copy",
+          "name": "[Admin] Get Accounts in Org",
           "event": [
             {
               "listen": "test",
@@ -1756,11 +1756,12 @@
                   "    pm.response.to.have.status(200);",
                   "});",
                   "",
-                  "// pm.test(\"Has result with ID\", function () {",
-                  "//     var jsonData = pm.response.json();",
-                  "//     pm.expect(jsonData.results.length).to.be.above(0);",
-                  "//     pm.environment.set(\"project_id\", jsonData.results[0].id);",
-                  "// });",
+                  "pm.test(\"Has result with ID\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.results.length).to.be.above(0);",
+                  "    pm.environment.set(\"org_account_id\", jsonData.results[0].org_account_id);",
+                  "    pm.environment.set(\"account_id\", jsonData.results[0].account_id);",
+                  "});",
                   "",
                   ""
                 ],
@@ -2013,7 +2014,7 @@
   ],
   "variable": [
     {
-      "id": "eba191f9-1f3a-4374-bd08-f7dfa1db234a",
+      "id": "c7fd090f-2398-41a8-8388-7e6a5aa9af5d",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
