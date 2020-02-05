@@ -2011,7 +2011,7 @@
           "response": []
         },
         {
-          "name": "[Admin] Get Roles By Project Id Copy",
+          "name": "[Admin] Get Role By Id",
           "event": [
             {
               "listen": "test",
@@ -2227,7 +2227,7 @@
   ],
   "variable": [
     {
-      "id": "829b0c0e-0361-4922-b15a-fe28f23d902d",
+      "id": "7f88ef75-ed0b-4a23-ae81-5abefc12e5da",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
