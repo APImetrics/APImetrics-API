@@ -1827,7 +1827,7 @@
           "response": []
         },
         {
-          "name": "[Admin] Remove Account from Org By Id",
+          "name": "[Admin] Get Account in Org By Id Copy",
           "event": [
             {
               "listen": "test",
@@ -1862,7 +1862,7 @@
                 "token": "{{access_token}}"
               }
             },
-            "method": "DELETE",
+            "method": "GET",
             "header": [],
             "url": "{{base_url}}/api/2/admin/organization/accounts/{{account_id}}/"
           },
@@ -2330,7 +2330,7 @@
   ],
   "variable": [
     {
-      "id": "85122c56-5230-4f5c-8341-8c705e34ba7c",
+      "id": "116ec297-6f08-4c84-acd5-f4d3a3ae4578",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
