@@ -1827,6 +1827,48 @@
           "response": []
         },
         {
+          "name": "[Admin] Remove Account from Org By Id",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "b957e9ce-edeb-4833-978a-e585926e677a",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "// pm.test(\"Has result with ID\", function () {",
+                  "//     var jsonData = pm.response.json();",
+                  "//     pm.expect(jsonData.results.length).to.be.above(0);",
+                  "//     pm.environment.set(\"org_account_id\", jsonData.results[0].org_account_id);",
+                  "//     pm.environment.set(\"account_id\", jsonData.results[0].account_id);",
+                  "// });",
+                  "",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "5a053e00-ea56-47f7-99af-8cd07a59c32d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{access_token}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/api/2/admin/organization/accounts/{{account_id}}/"
+          },
+          "response": []
+        },
+        {
           "name": "[Admin] Get Project Access By Id",
           "event": [
             {
@@ -2288,7 +2330,7 @@
   ],
   "variable": [
     {
-      "id": "16db61fd-147b-452a-a870-578dea208cbd",
+      "id": "1f397503-c505-4e8f-addd-30763b0d80b0",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
