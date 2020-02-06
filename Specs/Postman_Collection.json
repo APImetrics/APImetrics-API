@@ -1745,6 +1745,47 @@
           "response": []
         },
         {
+          "name": "[Admin] Get Project By Id",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "b957e9ce-edeb-4833-978a-e585926e677a",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "// pm.test(\"Has result with ID\", function () {",
+                  "//     var jsonData = pm.response.json();",
+                  "//     pm.expect(jsonData.results.length).to.be.above(0);",
+                  "//     pm.environment.set(\"project_id\", jsonData.results[0].id);",
+                  "// });",
+                  "",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "1f88e00c-4b8a-42d8-9876-8f878c0ab239",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{access_token}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/api/2/admin/project/{{project_id}}/"
+          },
+          "response": []
+        },
+        {
           "name": "[Admin] Get Accounts in Org",
           "event": [
             {
@@ -1865,47 +1906,6 @@
             "method": "DELETE",
             "header": [],
             "url": "{{base_url}}/api/2/admin/organization/accounts/{{account_id}}/"
-          },
-          "response": []
-        },
-        {
-          "name": "[Admin] Get Project Access By Id Copy",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "b957e9ce-edeb-4833-978a-e585926e677a",
-                "exec": [
-                  "pm.test(\"Status code is 200\", function () {",
-                  "    pm.response.to.have.status(200);",
-                  "});",
-                  "",
-                  "// pm.test(\"Has result with ID\", function () {",
-                  "//     var jsonData = pm.response.json();",
-                  "//     pm.expect(jsonData.results.length).to.be.above(0);",
-                  "//     pm.environment.set(\"project_id\", jsonData.results[0].id);",
-                  "// });",
-                  "",
-                  ""
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "_postman_id": "1f88e00c-4b8a-42d8-9876-8f878c0ab239",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{access_token}}"
-              }
-            },
-            "method": "GET",
-            "header": [],
-            "url": "{{base_url}}/api/2/admin/project/{{project_id}}/access"
           },
           "response": []
         },
@@ -2371,7 +2371,7 @@
   ],
   "variable": [
     {
-      "id": "f765ff46-bc30-4c34-b963-3470f2ea1594",
+      "id": "10a0ff78-76ea-4c52-bf4b-58a27bbb7160",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
