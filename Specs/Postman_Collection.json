@@ -1862,7 +1862,7 @@
                 "token": "{{access_token}}"
               }
             },
-            "method": "GET",
+            "method": "DELETE",
             "header": [],
             "url": "{{base_url}}/api/2/admin/organization/accounts/{{account_id}}/"
           },
@@ -2330,7 +2330,7 @@
   ],
   "variable": [
     {
-      "id": "1f397503-c505-4e8f-addd-30763b0d80b0",
+      "id": "85122c56-5230-4f5c-8341-8c705e34ba7c",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
