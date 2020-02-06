@@ -1715,11 +1715,11 @@
                   "    pm.response.to.have.status(200);",
                   "});",
                   "",
-                  "// pm.test(\"Has result with ID\", function () {",
-                  "//     var jsonData = pm.response.json();",
-                  "//     pm.expect(jsonData.results.length).to.be.above(0);",
-                  "//     pm.environment.set(\"project_id\", jsonData.results[0].id);",
-                  "// });",
+                  "pm.test(\"Has result with ID\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.results.length).to.be.above(0);",
+                  "    pm.environment.set(\"project_id\", jsonData.results[0].id);",
+                  "});",
                   "",
                   ""
                 ],
@@ -1827,7 +1827,7 @@
           "response": []
         },
         {
-          "name": "[Admin] Get Account in Org By Id Copy",
+          "name": "[Admin] Remove Account from Org By Id",
           "event": [
             {
               "listen": "test",
@@ -1862,7 +1862,7 @@
                 "token": "{{access_token}}"
               }
             },
-            "method": "GET",
+            "method": "DELETE",
             "header": [],
             "url": "{{base_url}}/api/2/admin/organization/accounts/{{account_id}}/"
           },
@@ -2330,7 +2330,7 @@
   ],
   "variable": [
     {
-      "id": "116ec297-6f08-4c84-acd5-f4d3a3ae4578",
+      "id": "b2be4f58-c579-4ee0-93f0-3c7d48cf54cd",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
