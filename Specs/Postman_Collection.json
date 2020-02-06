@@ -1869,7 +1869,7 @@
           "response": []
         },
         {
-          "name": "[Admin] Get Project Access By Id Copy",
+          "name": "[Admin] Get Project By Id",
           "event": [
             {
               "listen": "test",
@@ -2371,7 +2371,7 @@
   ],
   "variable": [
     {
-      "id": "bf3f8341-3018-46c6-ac37-c61e543ec818",
+      "id": "705667db-1be4-4c4a-a049-2c66847838cc",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
