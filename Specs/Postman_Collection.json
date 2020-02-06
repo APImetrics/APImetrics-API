@@ -1869,6 +1869,47 @@
           "response": []
         },
         {
+          "name": "[Admin] Get Project Access By Id Copy",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "b957e9ce-edeb-4833-978a-e585926e677a",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "// pm.test(\"Has result with ID\", function () {",
+                  "//     var jsonData = pm.response.json();",
+                  "//     pm.expect(jsonData.results.length).to.be.above(0);",
+                  "//     pm.environment.set(\"project_id\", jsonData.results[0].id);",
+                  "// });",
+                  "",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "1f88e00c-4b8a-42d8-9876-8f878c0ab239",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{access_token}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/api/2/admin/project/{{project_id}}/access"
+          },
+          "response": []
+        },
+        {
           "name": "[Admin] Get Project Access By Id",
           "event": [
             {
@@ -2330,7 +2371,7 @@
   ],
   "variable": [
     {
-      "id": "b2be4f58-c579-4ee0-93f0-3c7d48cf54cd",
+      "id": "bf3f8341-3018-46c6-ac37-c61e543ec818",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
