@@ -2156,8 +2156,19 @@
                 "token": "{{access_token}}"
               }
             },
-            "method": "GET",
-            "header": [],
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"role_id\": \"SOME_ROLE\",\n\t\"description\": \"This is some explanatory text\"\n}"
+            },
             "url": "{{base_url}}/api/2/admin/organization/roles/"
           },
           "response": []
@@ -2451,7 +2462,7 @@
   ],
   "variable": [
     {
-      "id": "1b2c78f4-49b4-4da5-92e9-5594e7847549",
+      "id": "40764cd2-20a5-4af9-98a1-08d300a46d60",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
