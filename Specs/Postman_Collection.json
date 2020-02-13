@@ -2123,15 +2123,15 @@
               {
                 "key": "Content-Type",
                 "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
+                "type": "text",
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n\t\"role_id\": \"SOME_USERS2\"\n}"
+              "raw": ""
             },
-            "url": "{{base_url}}/api/2/admin/organization/accounts/{{account_id}}/role"
+            "url": "{{base_url}}/api/2/admin/organization/accounts/{{account_id}}/role/{{role_id}}"
           },
           "response": []
         },
@@ -2515,7 +2515,7 @@
   ],
   "variable": [
     {
-      "id": "b5e35071-233e-482c-91ab-e6cfd7a53d55",
+      "id": "bd082d92-595a-4fc1-8ed6-c7bd2a086a66",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
