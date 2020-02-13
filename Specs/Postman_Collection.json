@@ -1609,6 +1609,36 @@
                 "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
               },
               "response": []
+            },
+            {
+              "name": "[Auth0] Remove account permission Copy",
+              "_postman_id": "c2754b51-7daa-4f5b-b6f6-77efd807ecb1",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{backend_access_token}}"
+                  }
+                },
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"permissions\": [\n        {\n            \"permission_name\": \"apimetrics-role-SOME_USERS2\",\n            \"resource_server_identifier\": \"https://client.apimetrics.io\"\n        }\n    ]\n}"
+                },
+                "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
+              },
+              "response": []
             }
           ],
           "_postman_id": "80ce785a-2f91-445b-8c93-8b641fa6ae0f",
@@ -2621,7 +2651,7 @@
   ],
   "variable": [
     {
-      "id": "db07fe87-27ae-4de6-b8a0-48e55ff96165",
+      "id": "4daaccfd-1156-4099-b94a-c82f127e4ec2",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
