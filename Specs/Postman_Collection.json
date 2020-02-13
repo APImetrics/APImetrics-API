@@ -2118,9 +2118,20 @@
                 "token": "{{access_token}}"
               }
             },
-            "method": "GET",
-            "header": [],
-            "url": "{{base_url}}/api/2/admin/organization/accounts/{{account_id}}/"
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"role_id\": \"SOME_USERS2\"\n}"
+            },
+            "url": "{{base_url}}/api/2/admin/organization/accounts/{{account_id}}/role"
           },
           "response": []
         },
@@ -2504,7 +2515,7 @@
   ],
   "variable": [
     {
-      "id": "259497be-fc41-4e2a-8c92-41ed16a84a2e",
+      "id": "bb931337-12fe-4310-87b2-f5d99ff1b2f2",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
