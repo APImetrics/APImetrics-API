@@ -2224,7 +2224,7 @@
                 "token": "{{access_token}}"
               }
             },
-            "method": "DELETE",
+            "method": "GET",
             "header": [
               {
                 "key": "Content-Type",
@@ -2237,7 +2237,7 @@
               "mode": "raw",
               "raw": ""
             },
-            "url": "{{base_url}}/api/2/admin/organization/accounts/google-oauth2%7C110264196302426321895/role/VIEWER_GANG"
+            "url": "{{base_url}}/api/2/admin/organization/accounts/google-oauth2%7C110264196302426321895/"
           },
           "response": []
         },
@@ -2621,7 +2621,7 @@
   ],
   "variable": [
     {
-      "id": "46ce66e1-3172-4e96-ab3b-c98c8eff7954",
+      "id": "db07fe87-27ae-4de6-b8a0-48e55ff96165",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
