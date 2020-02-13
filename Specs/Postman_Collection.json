@@ -1604,7 +1604,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\"permissions\": [{\"permission_name\": \"apimetrics-role-SOME_USERS2\", \"resource_server_identifier\": \"https://client.apimetrics.io\"}]}"
+                  "raw": "{\n    \"permissions\": [\n        {\n            \"permission_name\": \"apimetrics-role-SOME_USERS2\",\n            \"resource_server_identifier\": \"https://client.apimetrics.io\"\n        }\n    ]\n}"
                 },
                 "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
               },
@@ -2515,7 +2515,7 @@
   ],
   "variable": [
     {
-      "id": "70dcc5c8-c9ee-4d64-a2b5-7564daf1d6ea",
+      "id": "3f7afab0-8b43-4621-b81b-97fdd4828568",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
