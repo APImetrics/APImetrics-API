@@ -2189,6 +2189,59 @@
           "response": []
         },
         {
+          "name": "[Admin] Remove Role from Account in Org Copy Copy",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "b957e9ce-edeb-4833-978a-e585926e677a",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "// pm.test(\"Has result with ID\", function () {",
+                  "//     var jsonData = pm.response.json();",
+                  "//     pm.expect(jsonData.results.length).to.be.above(0);",
+                  "//     pm.environment.set(\"org_account_id\", jsonData.results[0].org_account_id);",
+                  "//     pm.environment.set(\"account_id\", jsonData.results[0].account_id);",
+                  "// });",
+                  "",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "ce1c3274-3d52-472a-8214-db2d10bfe624",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{access_token}}"
+              }
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "{{base_url}}/api/2/admin/organization/accounts/google-oauth2%7C110264196302426321895/role/VIEWER_GANG"
+          },
+          "response": []
+        },
+        {
           "name": "[Admin] Get Roles in Org",
           "event": [
             {
@@ -2568,7 +2621,7 @@
   ],
   "variable": [
     {
-      "id": "54fa6a47-83c9-4f7b-8999-0345d8a89982",
+      "id": "46ce66e1-3172-4e96-ab3b-c98c8eff7954",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
