@@ -1525,7 +1525,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n    \"scopes\": [\n        {\n            \"value\": \"admin\",\n            \"description\": \"Organization Admin\"\n        },\n        {\n            \"value\": \"site_admin\",\n            \"description\": \"Site-wide administrator\"\n        },\n        {\n        \t\"value\": \"apimetrics-role-SOME_USERS2\",\n            \"description\": \"User defined role\"\n        }\n    ]\n}"
+                  "raw": "{\n    \"scopes\": [\n        {\n            \"description\": \"Organization Admin\",\n            \"value\": \"admin\"\n        },\n        {\n            \"description\": \"Site-wide administrator\",\n            \"value\": \"site_admin\"\n        },\n        {\n            \"description\": \"User defined role\",\n            \"value\": \"apimetrics-role-SOME_USERS2\"\n        },\n        {\n            \"description\": \"Development team\",\n            \"value\": \"qcmetrics-role-DEV_TEAM\"\n        }\n    ]\n}"
                 },
                 "url": "https://dev-apimetrics.auth0.com/api/v2/resource-servers/5e1fa8b0f4ea4207a9ea318b"
               },
@@ -2651,7 +2651,7 @@
   ],
   "variable": [
     {
-      "id": "041d9bec-bc88-41bb-ba8b-a8810230110a",
+      "id": "b7af8b1d-b1a4-473c-9635-535d0b0965cd",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
