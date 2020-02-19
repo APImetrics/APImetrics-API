@@ -1464,6 +1464,25 @@
               "response": []
             },
             {
+              "name": "[Auth0] Get account metadata Copy",
+              "_postman_id": "e6ea0b91-aa05-4893-ac97-95849bc75c87",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{backend_access_token}}"
+                  }
+                },
+                "method": "GET",
+                "header": [],
+                "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}"
+              },
+              "response": []
+            },
+            {
               "name": "[Auth0] Get resource servers",
               "_postman_id": "24177470-a193-433a-80c0-cd19c4a24f2e",
               "protocolProfileBehavior": {
@@ -1503,6 +1522,19 @@
             },
             {
               "name": "[Auth0] Update resource server by ID",
+              "event": [
+                {
+                  "listen": "prerequest",
+                  "script": {
+                    "id": "829626e2-9bdb-491c-8ed5-8170bbb9984a",
+                    "exec": [
+                      "throw new Error('Without getting the latest resource permissions, this is a bad idea')",
+                      ""
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
               "_postman_id": "c38401e6-bbd5-4bc8-b332-a587049382d4",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -2651,7 +2683,7 @@
   ],
   "variable": [
     {
-      "id": "d43fc0e1-ffad-4409-94a2-2fec8dc6db78",
+      "id": "0f1eee75-081e-48bb-9a85-c651ae173045",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
