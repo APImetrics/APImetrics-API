@@ -1464,7 +1464,7 @@
               "response": []
             },
             {
-              "name": "[Auth0] Get account metadata Copy",
+              "name": "[Auth0] Get BARCLAYS connection details",
               "_postman_id": "e6ea0b91-aa05-4893-ac97-95849bc75c87",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -2683,7 +2683,7 @@
   ],
   "variable": [
     {
-      "id": "0f1eee75-081e-48bb-9a85-c651ae173045",
+      "id": "4ed1dd77-11e9-4bbd-8218-0f9e01b06147",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
