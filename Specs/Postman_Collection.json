@@ -1478,7 +1478,7 @@
                 },
                 "method": "GET",
                 "header": [],
-                "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}"
+                "url": "https://dev-apimetrics.auth0.com/api/v2/connections/BARCLAYS"
               },
               "response": []
             },
@@ -2683,7 +2683,7 @@
   ],
   "variable": [
     {
-      "id": "4ed1dd77-11e9-4bbd-8218-0f9e01b06147",
+      "id": "dfb2ada3-6b2b-456b-9603-432f5da67b2e",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
