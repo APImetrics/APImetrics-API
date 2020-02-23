@@ -1564,7 +1564,7 @@
               "response": []
             },
             {
-              "name": "[Auth0] Get account permissions",
+              "name": "[Auth0] Get accounts in org",
               "_postman_id": "99c6c10e-26a6-4687-8e4a-cfb905ac9cb2",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -2702,7 +2702,7 @@
   ],
   "variable": [
     {
-      "id": "5ebdfdb6-32ff-497c-a35b-dcd0731b3731",
+      "id": "23b83646-c94c-4b34-b3ef-25af4cc56ece",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
