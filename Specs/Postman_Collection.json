@@ -1583,6 +1583,25 @@
               "response": []
             },
             {
+              "name": "[Auth0] Get account permissions Copy",
+              "_postman_id": "2144d9eb-5627-4225-b5ae-067d2034b607",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{backend_access_token}}"
+                  }
+                },
+                "method": "GET",
+                "header": [],
+                "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
+              },
+              "response": []
+            },
+            {
               "name": "[Auth0] Add account permission",
               "_postman_id": "0657437c-a910-40eb-b744-0567690c1012",
               "protocolProfileBehavior": {
@@ -1668,25 +1687,6 @@
                   "mode": "raw",
                   "raw": "{\n    \"permissions\": [\n        {\n            \"permission_name\": \"apimetrics-role-SOME_USERS2\",\n            \"resource_server_identifier\": \"https://client.apimetrics.io\"\n        }\n    ]\n}"
                 },
-                "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
-              },
-              "response": []
-            },
-            {
-              "name": "[Auth0] Get account permissions Copy",
-              "_postman_id": "2144d9eb-5627-4225-b5ae-067d2034b607",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "auth": {
-                  "type": "bearer",
-                  "bearer": {
-                    "token": "{{backend_access_token}}"
-                  }
-                },
-                "method": "GET",
-                "header": [],
                 "url": "https://dev-apimetrics.auth0.com/api/v2/users/{{account_id}}/permissions"
               },
               "response": []
@@ -2702,7 +2702,7 @@
   ],
   "variable": [
     {
-      "id": "3fd9088b-243b-4125-a37f-019c846b33d1",
+      "id": "5ebdfdb6-32ff-497c-a35b-dcd0731b3731",
       "key": "apimetrics_token",
       "value": "TBD",
       "type": "string"
